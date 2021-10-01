@@ -106,15 +106,18 @@
     background-color: var(--fg);
   }
 
+  .nav.active {
+    display: block;
+  }
+
   .nav {
-    /*display: none;*/
+    display: none;
 
     position: absolute;
     top: 101%;
     left: 0;
 
     width: 100%;
-
     background-color: var(--head);
   }
 
