@@ -1,13 +1,15 @@
 /* HEADER */
 .header {
-  position: sticky;
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 999;
 
   width: 100%;
   padding: 10px 0;
 
   background-color: var(--head);
+  box-shadow: 0 0 10px 10px var(--bg);
 }
 
 .header__inner,
@@ -106,15 +108,18 @@
     background-color: var(--fg);
   }
 
+  .nav.active {
+    display: block;
+  }
+
   .nav {
-    /*display: none;*/
+    display: none;
 
     position: absolute;
     top: 101%;
     left: 0;
 
     width: 100%;
-
     background-color: var(--head);
   }
 
