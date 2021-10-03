@@ -9,6 +9,7 @@
   padding: 10px 0;
 
   background-color: var(--head);
+  box-shadow: 0 0 10px 10px var(--bg);
 }
 
 .header__inner,
