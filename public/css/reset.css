@@ -2,10 +2,11 @@
  * ========== СБРОС СТИЛЕЙ ==========
  */
 :root {
-  --bg: #05101c;
-  --fg: #f7f3fe;
+  --bg: #2c3b4b;
+  --fg: #e7ebee;
 
-  --head: #1c343b;
+  --head: #555513;
+  --shadow: #071b31;
 }
 
 * {
@@ -22,6 +23,10 @@ body {
   font-family: "Liberation Serif";
 
   color: var(--fg);
+  background-size: cover;
+  background-image: url("../imgs/space.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
   background-color: var(--bg);
 }
 
@@ -37,11 +42,25 @@ h3 {
   margin: 0;
 }
 
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 button {
   font-size: inherit;
   font-family: inherit;
+  color: inherit;
+
+  margin: 0;
+  padding: 0;
 
   border: 0;
   outline: 0;
   background: none;
+
+  cursor: pointer;
 }
