@@ -10,6 +10,8 @@
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/blocks/header.css">
+  <link rel="stylesheet" href="../../css/blocks/sidebar.css">
+  <link rel="stylesheet" href="../../css/blocks/main.css">
 
   <link rel="icon" href="../../imgs/icons/favicon.png">
 </head>
@@ -17,7 +19,7 @@
 <body>
 
 <!--========== HEADER ==========-->
-<header class="header">
+<!--<header class="header">
   <div class="container">
     <div class="header__inner">
       <a class="header__logo" href="../../index.html">
@@ -65,12 +67,81 @@
           </li>
         </ul>
       </nav>
-    </div>  <!-- ./header__inner -->
-  </div> <!-- ./container -->
-</header>
+    </div>
+  </div>
+</header>-->
 
-<!-- СДЕЛАТЬ СЕКЦИЮ ДЛЯ ОРБИТАЛЬНЫХ ХАРАКТЕРИСТИК -->
-<!-- СДЕЛАТЬ СЕКЦИЮ ДЛЯ ФИЗИЧЕСКИХ ХАРАКТЕРИСТИК -->
+<!-- TODO: Сделать вместо шапки сайта выдвигающийся (возможно) сайдбар -->
+<aside class="sidebar">
+  <ul class="sidebar__planets">
+    <li class="sidebar__planet">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/mercury.png">
+        <span class="planet__name">Меркурий</span>
+      </a>
+    </li>
+
+    <li class="sidebar__planet">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/venus.png">
+        <span class="planet__name">Венера</span>
+      </a>
+    </li>
+
+    <li class="sidebar__planet">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/earth.png">
+        <span class="planet__name">Земля</span>
+      </a>
+    </li>
+
+    <li class="sidebar__planet">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/mars.png">
+        <span class="planet__name">Марс</span>
+      </a>
+    </li>
+
+    <li class="sidebar__planet">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/jupiter.png">
+        <span class="planet__name">Юпитер</span>
+      </a>
+    </li>
+
+    <li class="sidebar__planet">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/saturn.png">
+        <span class="planet__name">Сатурн</span>
+      </a>
+    </li>
+
+    <li class="sidebar__planet">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/uranus.png">
+        <span class="planet__name">Уран</span>
+      </a>
+    </li>
+
+    <li class="sidebar__planet">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/neptune.png">
+        <span class="planet__name">Нептун</span>
+      </a>
+    </li>
+  </ul>
+</aside>
+
+
+<!--========== ОСНОВНОЙ КОНТЕНТ ==========-->
+<main class="main">
+  <div class="container">
+    <div class="main__inner">
+      <!-- СДЕЛАТЬ СЕКЦИЮ ДЛЯ ОРБИТАЛЬНЫХ ХАРАКТЕРИСТИК -->
+    </div>
+  </div>
+  <!-- СДЕЛАТЬ СЕКЦИЮ ДЛЯ ФИЗИЧЕСКИХ ХАРАКТЕРИСТИК -->
+</main>
 
 <!--========== JS Section ==========-->
 <script src="../../../src/burger.js"></script>

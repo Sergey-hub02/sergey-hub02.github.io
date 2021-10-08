@@ -1,3 +1,29 @@
+/*========== ПЕРЕМЕННЫЕ ==========*/
+:root {
+  --bg: #2c3b4b;
+  --fg: #e7ebee;
+
+  --head: #555513;
+  --shadow: #071b31;
+}
+
+/*========== ОБЩИЕ СТИЛИ ДЛЯ ВСЕХ СТРАНИЦ ==========*/
+body {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Liberation Serif";
+
+  color: var(--fg);
+
+  background-size: cover;
+  background-image: url("../imgs/space.jpg");
+  background-color: var(--bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 h1 {
   font-size: 25px;
 }
@@ -10,9 +36,10 @@ h3 {
   font-size: 18px;
 }
 
+/*========== КОНТЕЙНЕР ==========*/
 .container {
   width: 100%;
-  max-width: 1684px;
+  max-width: 1824px;
 
   margin: 0 auto;
   padding: 0 12px;
