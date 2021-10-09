@@ -1,0 +1,54 @@
+/*========== БОКОВАЯ ПАНЕЛЬ ==========*/
+.bottom {
+  position: fixed;
+
+  bottom: 0;
+  left: 50%;
+  transform: translate3d(-50%, 0, 0);
+
+  background-color: rgba(85, 85, 19, 0.75);
+}
+
+.bottom__planets {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.bottom__planet {
+  width: 12.5%;
+  transition: background-color 0.2s linear;
+}
+
+.bottom__planet:hover,
+.bottom__planet.active {
+  background-color: #66662b;
+}
+
+.planet__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  padding: 5px;
+}
+
+.planet__icon {
+  width: 55px;
+  height: 55px;
+}
+
+
+/*========== MEDIA ЗАПРОСЫ ==========*/
+@media (max-width: 850px) {
+  .bottom {
+    width: 100%;
+  }
+}
+
+@media (max-width: 550px) {
+  .planet__icon {
+    width: 40px;
+    height: 40px;
+  }
+}

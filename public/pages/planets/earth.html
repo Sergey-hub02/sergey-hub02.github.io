@@ -10,7 +10,8 @@
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/blocks/header.css">
-  <link rel="stylesheet" href="../../css/blocks/sidebar.css">
+  <link rel="stylesheet" href="../../css/blocks/bottom.css">
+  <link rel="stylesheet" href="../../css/blocks/warning.css">
   <link rel="stylesheet" href="../../css/blocks/main.css">
 
   <link rel="icon" href="../../imgs/icons/favicon.png">
@@ -18,130 +19,83 @@
 
 <body>
 
-<!--========== HEADER ==========-->
-<!--<header class="header">
-  <div class="container">
-    <div class="header__inner">
-      <a class="header__logo" href="../../index.html">
-        <img class="logo" src="../../imgs/icons/logo.png" alt="logo">
-        <span class="logo__text">Solar Wiki</span>
-      </a>
+<!--========== ПРЕДУПРЕЖДЕНИЕ ==========-->
+<div class="warning">
+  <h3 class="warning__title">Внимание!</h3>
 
-      <nav class="nav">
-        <button type="button" class="nav__button" id="nav_menu">Список планет <span class="arrow down"></span></button>
-        <ul class="nav__planets" id="nav_planets">
-          <li class="nav__planet">
-            <a class="planet__link" href="#">Меркурий</a>
-          </li>
-
-          <li class="nav__planet">
-            <a class="planet__link" href="#">Венера</a>
-          </li>
-
-          <li class="nav__planet">
-            <a class="planet__link" href="#">Земля</a>
-          </li>
-
-          <li class="nav__planet">
-            <a class="planet__link" href="#">Марс</a>
-          </li>
-
-          <li class="nav__planet">
-            <a class="planet__link" href="#">Юпитер</a>
-          </li>
-
-          <li class="nav__planet">
-            <a class="planet__link" href="#">Сатурн</a>
-          </li>
-
-          <li class="nav__planet">
-            <a class="planet__link" href="#">Уран</a>
-          </li>
-
-          <li class="nav__planet">
-            <a class="planet__link" href="#">Нептун</a>
-          </li>
-
-          <li class="nav__planet">
-            <a class="planet__link" href="#">Плутон</a>
-          </li>
-        </ul>
-      </nav>
-    </div>
+  <div class="warning__description">
+    <p class="warning__text">В статье могут встречаться незнакомые вам термины, часто использующиеся в астрономии, поэтому предлагаю вам посетить <a class="warning__link" href="#">эту страницу</a> для их изучения</p>
   </div>
-</header>-->
-
-<!-- TODO: Сделать вместо шапки сайта выдвигающийся (возможно) сайдбар -->
-<aside class="sidebar">
-  <ul class="sidebar__planets">
-    <li class="sidebar__planet">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/mercury.png">
-        <span class="planet__name">Меркурий</span>
-      </a>
-    </li>
-
-    <li class="sidebar__planet">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/venus.png">
-        <span class="planet__name">Венера</span>
-      </a>
-    </li>
-
-    <li class="sidebar__planet">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/earth.png">
-        <span class="planet__name">Земля</span>
-      </a>
-    </li>
-
-    <li class="sidebar__planet">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/mars.png">
-        <span class="planet__name">Марс</span>
-      </a>
-    </li>
-
-    <li class="sidebar__planet">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/jupiter.png">
-        <span class="planet__name">Юпитер</span>
-      </a>
-    </li>
-
-    <li class="sidebar__planet">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/saturn.png">
-        <span class="planet__name">Сатурн</span>
-      </a>
-    </li>
-
-    <li class="sidebar__planet">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/uranus.png">
-        <span class="planet__name">Уран</span>
-      </a>
-    </li>
-
-    <li class="sidebar__planet">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/neptune.png">
-        <span class="planet__name">Нептун</span>
-      </a>
-    </li>
-  </ul>
-</aside>
+</div>
 
 
 <!--========== ОСНОВНОЙ КОНТЕНТ ==========-->
 <main class="main">
   <div class="container">
     <div class="main__inner">
-      <!-- СДЕЛАТЬ СЕКЦИЮ ДЛЯ ОРБИТАЛЬНЫХ ХАРАКТЕРИСТИК -->
-    </div>
-  </div>
-  <!-- СДЕЛАТЬ СЕКЦИЮ ДЛЯ ФИЗИЧЕСКИХ ХАРАКТЕРИСТИК -->
+
+      <section class="section">
+        <header class="section__header">
+          <h1 class="section__title">Земля (планета)</h1>
+        </header>
+      </section>
+    </div>  <!-- ./main__inner -->
+  </div>  <!-- ./container -->
 </main>
+
+
+<!--========== НИЖНЯЯ ПАНЕЛЬ ==========-->
+<footer class="bottom">
+  <ul class="bottom__planets">
+    <li class="bottom__planet" title="Меркурий">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/mercury.png">
+      </a>
+    </li>
+
+    <li class="bottom__planet" title="Венера">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/venus.png">
+      </a>
+    </li>
+
+    <li class="bottom__planet active" title="Земля">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/earth.png">
+      </a>
+    </li>
+
+    <li class="bottom__planet" title="Марс">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/mars.png">
+      </a>
+    </li>
+
+    <li class="bottom__planet" title="Юпитер">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/jupiter.png">
+      </a>
+    </li>
+
+    <li class="bottom__planet" title="Сатурн">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/saturn.png">
+      </a>
+    </li>
+
+    <li class="bottom__planet" title="Уран">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/uranus.png">
+      </a>
+    </li>
+
+    <li class="bottom__planet" title="Нептун">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/neptune.png">
+      </a>
+    </li>
+  </ul>
+</footer>
 
 <!--========== JS Section ==========-->
 <script src="../../../src/burger.js"></script>

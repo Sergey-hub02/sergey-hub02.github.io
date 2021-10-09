@@ -1,0 +1,23 @@
+.warning {
+  max-width: 600px;
+  width: 100%;
+
+  margin: 15px auto 0 auto;
+  padding: 18px 15px;
+
+  text-align: center;
+  background-color: rgba(119, 119, 66, 0.6)
+}
+
+.warning__title {
+  margin-bottom: 5px;
+  text-transform: uppercase;
+}
+
+.warning__text {
+  font-size: 17px;
+}
+
+.warning__link {
+  color: #ff2aff;
+}
