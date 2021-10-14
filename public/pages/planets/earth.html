@@ -10,7 +10,7 @@
   <link rel="stylesheet" href="../../css/reset.css">
   <link rel="stylesheet" href="../../css/style.css">
   <link rel="stylesheet" href="../../css/blocks/header.css">
-  <link rel="stylesheet" href="../../css/blocks/bottom.css">
+  <link rel="stylesheet" href="../../css/blocks/sidebar.css">
   <link rel="stylesheet" href="../../css/blocks/warning.css">
   <link rel="stylesheet" href="../../css/blocks/main.css">
 
@@ -18,6 +18,66 @@
 </head>
 
 <body>
+
+<!--========== БОКОВАЯ ПАНЕЛЬ ==========-->
+<aside class="sidebar">
+  <ul class="sidebar__planets">
+    <li class="sidebar__planet" title="Солнце">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/sun.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Меркурий">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/mercury.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Венера">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/venus.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet active" title="Земля">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/earth.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Марс">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/mars.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Юпитер">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/jupiter.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Сатурн">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/saturn.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Уран">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/uranus.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Нептун">
+      <a class="planet__link" href="#">
+        <img class="planet__icon" src="../../imgs/icons/planets/neptune.png">
+      </a>
+    </li>
+  </ul>
+</aside>
+
 
 <!--========== ПРЕДУПРЕЖДЕНИЕ ==========-->
 <div class="warning">
@@ -43,59 +103,6 @@
   </div>  <!-- ./container -->
 </main>
 
-
-<!--========== НИЖНЯЯ ПАНЕЛЬ ==========-->
-<footer class="bottom">
-  <ul class="bottom__planets">
-    <li class="bottom__planet" title="Меркурий">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/mercury.png">
-      </a>
-    </li>
-
-    <li class="bottom__planet" title="Венера">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/venus.png">
-      </a>
-    </li>
-
-    <li class="bottom__planet active" title="Земля">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/earth.png">
-      </a>
-    </li>
-
-    <li class="bottom__planet" title="Марс">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/mars.png">
-      </a>
-    </li>
-
-    <li class="bottom__planet" title="Юпитер">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/jupiter.png">
-      </a>
-    </li>
-
-    <li class="bottom__planet" title="Сатурн">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/saturn.png">
-      </a>
-    </li>
-
-    <li class="bottom__planet" title="Уран">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/uranus.png">
-      </a>
-    </li>
-
-    <li class="bottom__planet" title="Нептун">
-      <a class="planet__link" href="#">
-        <img class="planet__icon" src="../../imgs/icons/planets/neptune.png">
-      </a>
-    </li>
-  </ul>
-</footer>
 
 <!--========== JS Section ==========-->
 <script src="../../../src/burger.js"></script>

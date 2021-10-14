@@ -1,26 +1,27 @@
 /*========== БОКОВАЯ ПАНЕЛЬ ==========*/
-.bottom {
+.sidebar {
   position: fixed;
+  z-index: 999;
 
-  bottom: 0;
-  left: 50%;
-  transform: translate3d(-50%, 0, 0);
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 0);
 
   background-color: rgba(85, 85, 19, 0.75);
 }
 
-.bottom__planets {
+.sidebar__planets {
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 }
 
-.bottom__planet {
-  width: 12.5%;
+.sidebar__planet {
+  /*width: 11.11111%;*/
   transition: background-color 0.2s linear;
 }
 
-.bottom__planet:hover,
-.bottom__planet.active {
+.sidebar__planet:hover,
+.sidebar__planet.active {
   background-color: #66662b;
 }
 
@@ -40,9 +41,22 @@
 
 
 /*========== MEDIA ЗАПРОСЫ ==========*/
-@media (max-width: 850px) {
-  .bottom {
+@media (max-width: 1000px) {
+  .sidebar {
+    top: auto;
+    bottom: 0;
+    transform: none;
+
     width: 100%;
+  }
+
+  .sidebar__planets {
+    flex-direction: row;
+    flex-wrap:  wrap;
+  }
+
+  .sidebar__planet {
+    width: 11.11111%;
   }
 }
 
