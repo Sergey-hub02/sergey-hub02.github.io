@@ -3,9 +3,10 @@
   --bg: #2c3b4b;
   --fg: #e7ebee;
 
-  --head: #555513;
+  --yellow: #555513;
   --shadow: #071b31;
 }
+
 
 /*========== ОБЩИЕ СТИЛИ ДЛЯ ВСЕХ СТРАНИЦ ==========*/
 body {
@@ -26,15 +27,19 @@ body {
 
 h1 {
   font-size: 25px;
+  margin-bottom: 15px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 23px;
+  margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
+
 
 /*========== КОНТЕЙНЕР ==========*/
 .container {
@@ -45,3 +50,22 @@ h3 {
   padding: 0 12px;
 }
 
+
+/*========== МЕДИА ЗАПРОСЫ ==========*/
+@media (max-width: 1000px) {
+  body {
+    padding-bottom: 65px;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0;
+  }
+}

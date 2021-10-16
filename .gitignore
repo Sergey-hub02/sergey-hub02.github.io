@@ -1,5 +1,5 @@
 # Игнорировать все файлы в папке ./public/imgs
-./public/imgs/*.*
+./public/imgs
 
 # Игнорировать файлы .odt и .odt#
 .odt

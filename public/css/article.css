@@ -1,0 +1,37 @@
+/*========== СТИЛИ ДЛЯ СТАТЕЙ О ПЛАНЕТАХ ==========*/
+.text {
+  text-align: justify;
+  margin-bottom: 8px;
+}
+
+.text:last-child {
+  margin-bottom: 0;
+}
+
+.image__container {
+  text-align: center;
+}
+
+.orderedlist {
+  padding-left: 30px;
+  list-style-type: decimal;
+}
+
+.orderedlist__item {
+  margin-top: 5px;
+}
+
+#structure {
+  max-width: 310px;
+  width: 100%;
+  height: auto;
+}
+
+#atmosphere {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
+
+/*========== МЕДИА ЗАПРОСЫ ==========*/

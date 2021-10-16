@@ -7,7 +7,7 @@
   left: 0;
   transform: translate3d(0, -50%, 0);
 
-  background-color: rgba(85, 85, 19, 0.75);
+  background-color: var(--yellow);
 }
 
 .sidebar__planets {
@@ -16,7 +16,6 @@
 }
 
 .sidebar__planet {
-  /*width: 11.11111%;*/
   transition: background-color 0.2s linear;
 }
 
@@ -41,6 +40,8 @@
 
 
 /*========== MEDIA ЗАПРОСЫ ==========*/
+
+/* По ширине экрана */
 @media (max-width: 1000px) {
   .sidebar {
     top: auto;
@@ -64,5 +65,25 @@
   .planet__icon {
     width: 40px;
     height: 40px;
+  }
+}
+
+/* По высоте экрана */
+@media (max-height: 700px) and (min-width: 1000px) {
+  .sidebar {
+    display: flex;
+    align-items: center;
+    height: 100%;
+  }
+}
+
+@media (max-height: 600px) and (min-width: 1000px) {
+  .planet__icon {
+    width: 40px;
+    height: 40px;
+  }
+
+  .planet__link {
+    padding: 0;
   }
 }
