@@ -1,0 +1,77 @@
+/*========== БОКОВАЯ ПАНЕЛЬ ==========*/
+.sidebar {
+  position: fixed;
+  z-index: 999;
+
+  top: 50%;
+  left: 0;
+  transform: translate3d(0, -50%, 0);
+
+  background-color: var(--yellow);
+}
+
+.sidebar__planets {
+  display: flex;
+  flex-direction: column;
+}
+
+.sidebar__planet {
+  transition: background-color 0.2s linear;
+}
+
+.sidebar__planet:hover,
+.sidebar__planet.active {
+  background-color: #66662b;
+}
+
+.planet__link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  height: 100%;
+  padding: 5px;
+}
+
+.planet__icon {
+  width: 55px;
+  height: 55px;
+}
+
+
+/*========== MEDIA ЗАПРОСЫ ==========*/
+
+/* По ширине экрана */
+@media (max-width: 1000px), (max-height: 640px) {
+  .sidebar {
+    top: auto !important;
+    bottom: 0 !important;
+    transform: none;
+
+    width: 100%;
+  }
+
+  .sidebar__planets {
+    flex-direction: row;
+    flex-wrap:  wrap;
+  }
+
+  .sidebar__planet {
+    width: 11.11111%;
+  }
+}
+
+@media (max-width: 550px) {
+  .planet__icon {
+    width: 40px;
+    height: 40px;
+  }
+}
+
+/* По высоте экрана */
+@media (max-height: 700px) {
+  .sidebar {
+    top: 0;
+    transform: none;
+  }
+}

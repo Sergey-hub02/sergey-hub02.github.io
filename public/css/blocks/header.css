@@ -1,15 +1,31 @@
-/* HEADER */
+/*========== СТРЕЛКИ ==========*/
+.arrow {
+  display: inline-block;
+  vertical-align: middle;
+
+  border: solid var(--fg);
+  border-width: 0 2px 2px 0;
+
+  padding: 3px;
+  margin-left: 5px;
+}
+
+.arrow.up {
+  transform: rotate(-135deg);
+}
+
+.arrow.down {
+  transform: rotate(45deg);
+}
+
+/*========== HEADER ==========*/
 .header {
-  position: fixed;
-  top: 0;
-  left: 0;
-  z-index: 999;
+  position: relative;
 
   width: 100%;
-  padding: 10px 0;
 
   background-color: var(--head);
-  box-shadow: 0 0 10px 10px var(--bg);
+  box-shadow: 0 0 10px 10px var(--shadow);
 }
 
 .header__inner,
@@ -19,130 +35,124 @@
   align-items: center;
 }
 
+.logo {
+  width: 45px;
+  height: 45px;
+}
+
 .logo__text {
   font-size: 25px;
   font-weight: 700;
   font-family: "Chilanka";
 }
 
-.nav__link {
-  position: relative;
 
+/*========== NAVIGATION ==========*/
+.nav {
+  height: 100%;
   font-size: 20px;
-  margin-left: 15px;
 }
 
-.nav__link::after {
-  content: "";
-  display: block;
+.nav__button {
+  padding: 20px 15px;
+  transition: background-color 0.2s linear;
+}
+
+.nav__button:hover,
+.nav__button.active {
+  background-color: #66662b;
+}
+
+.nav__planets {
+  display: none;
 
   position: absolute;
-  bottom: -0.5rem;
-  left: 0;
+  top: 101%;
+  right: 1%;
 
-  width: 0%;
-  height: 3px;
-
-  background-color: var(--fg);
-  transition: width 0.2s linear;
+  width: 200px;
+  background-color: var(--head);
 }
 
-.nav__link:hover::after {
-  width: 100%;
+.nav__planet {
+  padding: 8px 12px;
+  border-top: 1px solid var(--fg);
+
+  opacity: 0.75;
+  transition: background-color 0.2s linear, opacity 0.2s linear;
 }
 
-.nav__link:first-child {
-  margin-left: 0;
+.nav__planet:hover {
+  opacity: 1;
 }
 
-/* BURGER MENU */
-.burger {
-  display: none;
+.nav__planet:first-child {
+  border-top: 0;
 }
 
-.burger__menu {
-  font-size: 0;
+.nav__planet:hover {
+  background-color: #66662b;
 }
 
-/* MEDIA QUERIES */
-@media (max-width: 800px) {
-  .burger {
-    display: block;
+
+/*========== MEDIA QUERIES ==========*/
+@media (max-width: 1000px) {
+  .nav__planets {
+    right: 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .header {
+    padding: 9px 0;
+  }
+  .logo__text {
+    display: none;
   }
 
-  .burger__menu {
+  .nav__button {
     display: block;
     position: relative;
 
-    width: 50px;
-    height: 4px;
+    width: 40px;
+    height: 3px;
 
+    padding: 0;
+
+    background-color: var(--fg);
+    font-size: 0;
+  }
+
+  .nav__button:hover,
+  .nav__button.active {
     background-color: var(--fg);
   }
 
-  .burger__menu::before {
+  .nav__button::before,
+  .nav__button::after {
     content: "";
     display: block;
 
     position: absolute;
-    top: -10px;
-    left: 0;
+    background-color: var(--fg);
 
     width: 100%;
-    height: 4px;
-
-    background-color: var(--fg);
+    height: 3px;
   }
 
-  .burger__menu::after {
-    content: "";
-    display: block;
+  .nav__button::before {
+    top: -8px;
+    left: 0;
+  }
 
-    position: absolute;
-    bottom: -10px;
+  .nav__button::after {
+    bottom: -8px;
     right: 0;
-
-    width: 100%;
-    height: 4px;
-
-    background-color: var(--fg);
   }
 
-  .nav.active {
-    display: block;
-  }
 
-  .nav {
-    display: none;
-
-    position: absolute;
-    top: 101%;
-    left: 0;
-
-    width: 100%;
-    background-color: var(--head);
-  }
-
-  .nav__link {
-    display: block;
-
-    padding: 10px 16px;
-    margin-left: 0;
-
-    border-bottom: 2px solid var(--fg);
-  }
-
-  .nav__link::after {
-    display: none;
-  }
-
-  .nav__link:last-child {
-    border-bottom: 0;
-  }
-}
-
-@media (max-width: 400px) {
-  .logo__text {
-    display: none;
+  .arrow.up,
+  .arrow.down {
+    border: 0;
   }
 }

@@ -1,0 +1,8 @@
+/*========== СЕКЦИЯ ==========*/
+.section {
+  margin-top: 30px;
+}
+
+.section:first-child {
+  margin-top: 0;
+}

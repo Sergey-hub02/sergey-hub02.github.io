@@ -1,0 +1,29 @@
+/*========== БЛОК С ОСНОВНЫМ КОНТЕНТОМ ==========*/
+.main {
+  padding: 15px 65px;
+}
+
+.main__inner {
+  padding: 20px;
+  background-color: rgba(9, 12, 15, 0.6);
+}
+
+
+/*========== МЕДИА ЗАПРОСЫ ==========*/
+@media (max-width: 1000px) {
+  .main {
+    padding: 15px 0;
+  }
+}
+
+@media (max-width: 600px) {
+  .main__inner {
+    padding: 20px 10px;
+  }
+}
+
+@media (max-width: 500px) {
+  .main {
+    padding: 0;
+  }
+}

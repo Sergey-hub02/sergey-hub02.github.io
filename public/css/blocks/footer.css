@@ -1,0 +1,20 @@
+/*========== ПОДВАЛ САЙТА ==========*/
+.footer {
+  padding: 10px 12px;
+  background-color: #55133b;
+}
+
+.footer__inner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.footer__logo {
+  width: 32px;
+  height: auto;
+}
+
+.footer__text {
+  padding-left: 5px;
+}

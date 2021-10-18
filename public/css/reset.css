@@ -1,13 +1,6 @@
 /**
  * ========== СБРОС СТИЛЕЙ ==========
  */
-:root {
-  --bg: #05101c;
-  --fg: #f7f3fe;
-
-  --head: #1c343b;
-}
-
 * {
   box-sizing: border-box;
 }
@@ -15,14 +8,6 @@
 body {
   margin: 0;
   padding: 0;
-
-  font-size: 16px;
-  font-style: normal;
-  font-weight: 400;
-  font-family: "Liberation Serif";
-
-  color: var(--fg);
-  background-color: var(--bg);
 }
 
 a {
@@ -37,11 +22,25 @@ h3 {
   margin: 0;
 }
 
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+
+  list-style: none;
+}
+
 button {
   font-size: inherit;
   font-family: inherit;
+  color: inherit;
+
+  margin: 0;
+  padding: 0;
 
   border: 0;
   outline: 0;
   background: none;
+
+  cursor: pointer;
 }

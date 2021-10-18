@@ -1,20 +1,71 @@
+/*========== ПЕРЕМЕННЫЕ ==========*/
+:root {
+  --bg: #2c3b4b;
+  --fg: #e7ebee;
+
+  --yellow: #555513;
+  --shadow: #071b31;
+}
+
+
+/*========== ОБЩИЕ СТИЛИ ДЛЯ ВСЕХ СТРАНИЦ ==========*/
+body {
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  font-family: "Liberation Serif";
+
+  color: var(--fg);
+
+  background-size: cover;
+  background-image: url("../imgs/space.jpg");
+  background-color: var(--bg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+}
+
 h1 {
   font-size: 25px;
+  margin-bottom: 15px;
 }
 
 h2 {
-  font-size: 20px;
+  font-size: 23px;
+  margin-bottom: 10px;
 }
 
 h3 {
-  font-size: 18px;
+  font-size: 20px;
+  margin-bottom: 5px;
 }
 
+
+/*========== КОНТЕЙНЕР ==========*/
 .container {
   width: 100%;
-  max-width: 1684px;
+  max-width: 1774px;
 
   margin: 0 auto;
   padding: 0 12px;
 }
 
+
+/*========== МЕДИА ЗАПРОСЫ ==========*/
+@media (max-width: 1000px), (max-height: 640px) {
+  body {
+    padding-bottom: 65px;
+  }
+}
+
+@media (max-width: 550px) {
+  body {
+    padding-bottom: 50px;
+  }
+}
+
+@media (max-width: 500px) {
+  .container {
+    padding: 0;
+  }
+}
