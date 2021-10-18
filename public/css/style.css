@@ -52,7 +52,7 @@ h3 {
 
 
 /*========== МЕДИА ЗАПРОСЫ ==========*/
-@media (max-width: 1000px) {
+@media (max-width: 1000px), (max-height: 640px) {
   body {
     padding-bottom: 65px;
   }

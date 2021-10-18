@@ -42,10 +42,10 @@
 /*========== MEDIA ЗАПРОСЫ ==========*/
 
 /* По ширине экрана */
-@media (max-width: 1000px) {
+@media (max-width: 1000px), (max-height: 640px) {
   .sidebar {
-    top: auto;
-    bottom: 0;
+    top: auto !important;
+    bottom: 0 !important;
     transform: none;
 
     width: 100%;
@@ -69,21 +69,9 @@
 }
 
 /* По высоте экрана */
-@media (max-height: 700px) and (min-width: 1000px) {
+@media (max-height: 700px) {
   .sidebar {
-    display: flex;
-    align-items: center;
-    height: 100%;
-  }
-}
-
-@media (max-height: 600px) and (min-width: 1000px) {
-  .planet__icon {
-    width: 40px;
-    height: 40px;
-  }
-
-  .planet__link {
-    padding: 0;
+    top: 0;
+    transform: none;
   }
 }
