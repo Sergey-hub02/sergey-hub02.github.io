@@ -9,56 +9,72 @@
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-
-  <link rel="stylesheet" href="./css/blocks/header.css">
-  <link rel="stylesheet" href="./css/blocks/intro.css">
+  <link rel="stylesheet" href="./css/blocks/map.css">
 
   <link rel="icon" href="./imgs/icons/favicon.png">
 </head>
 
 <body>
 
-<!-- ========== HEADER ========== -->
-<header class="header">
-  <div class="container">
-    <div class="header__inner">
-      <a class="header__logo" href="./index.html">
-        <img class="logo" src="./imgs/icons/logo.png" alt="logo">
-        <span class="logo__text">Solar Wiki</span>
-      </a>
+<!--========== КАРТА СОЛНЕЧНОЙ СИСТЕМЫ ==========-->
+<main class="map">
+  <div class="map__item" id="sun">
+    <a class="map__link" href="#">
+      <picture>
+        <source class="map__planet" srcset="./imgs/planets/Sun/sun_full.png" media="(max-width: 1100px)">
+        <img class="map__planet" src="./imgs/planets/Sun/sun_half.png" alt="Sun">
+      </picture>
+    </a>
+  </div>
 
-      <nav class="nav" id="nav">
-        <a class="nav__link" href="#">Link #1</a>
-        <a class="nav__link" href="#">Link #2</a>
-        <a class="nav__link" href="#">Link #3</a>
-      </nav>
+  <div class="map__item" id="mercury">
+    <a class="map__link" href="#">
+      <img class="map__planet" src="./imgs/planets/Mercury/mercury.png" alt="Mercury">
+    </a>
+  </div>
 
-      <div class="burger">
-        <button class="burger__menu" id="burger_menu">Burger Menu</button>
-      </div>
-    </div> <!-- ./header__inner -->
-  </div> <!-- ./container -->
-</header>
+  <div class="map__item" id="venus">
+    <a class="map__link" href="#">
+      <img class="map__planet" src="./imgs/planets/Venus/venus.png" alt="Venus">
+    </a>
+  </div>
 
+  <div class="map__item" id="earth">
+    <a class="map__link" href="#">
+      <img class="map__planet" src="./imgs/planets/Earth/earth.png" alt="Earth">
+    </a>
+  </div>
 
-<!-- ========== INTRO SECTION ========== -->
-<section class="intro">
-  <div class="container">
-    <div class="intro__inner">
-      <h1 class="intro__title">Добро пожаловать на Solar Wiki</h1>
-      <p class="intro__text">Нужно узнать информацию о конкретной планете Солнечной системы?</p>
-      <p class="intro__text">Тогда Solar Wiki - идеальный инструмент для вас!</p>
+  <div class="map__item" id="mars">
+    <a class="map__link" href="#">
+      <img class="map__planet" src="./imgs/planets/Mars/mars.png" alt="Mars">
+    </a>
+  </div>
 
-      <div class="intro__button">
-        <a class="intro__link" href="./pages/solarsystem.html">Начать исследование</a>
-      </div>
-    </div>
-  </div> <!-- ./container -->
-</section> <!-- ./intro -->
+  <div class="map__item" id="jupiter">
+    <a class="map__link" href="#">
+      <img class="map__planet" src="./imgs/planets/Jupiter/jupiter.png" alt="Jupiter">
+    </a>
+  </div>
 
+  <div class="map__item" id="saturn">
+    <a class="map__link" href="#">
+      <img class="map__planet" src="./imgs/planets/Saturn/saturn.png" alt="Saturn">
+    </a>
+  </div>
 
-<!-- ========== JavaScript Section ========== -->
-<script src="../src/burger.js"></script>
+  <div class="map__item" id="uranus">
+    <a class="map__link" href="#">
+      <img class="map__planet" src="./imgs/planets/Uranus/uranus.png" alt="Uranus">
+    </a>
+  </div>
+
+  <div class="map__item" id="neptune">
+    <a class="map__link" href="#">
+      <img class="map__planet" src="./imgs/planets/Neptune/neptune.png" alt="Neptune">
+    </a>
+  </div>
+</main>
 
 </body>
 
