@@ -42,17 +42,17 @@
 }
 
 .map__planet {
-  width: 95%;
+  max-width: 95%;
   height: auto;
-  transition: width 0.2s linear;
+  transition: max-width 0.2s linear;
 }
 
 #sun .map__planet {
-  width: 100%;
+  max-width: 100%;
 }
 
 .map__planet:hover {
-  width: 100%;
+  max-width: 100%;
 }
 
 
@@ -69,6 +69,17 @@
   }
 
   .map__item {
+    margin-bottom: 30px;
     flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 600px) {
+  #mercury img,
+  #venus img,
+  #earth img,
+  #mars img {
+    width: 50%;
   }
 }
