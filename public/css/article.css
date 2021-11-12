@@ -14,12 +14,26 @@
 
 .orderedlist {
   padding-left: 30px;
+  margin-bottom: 15px;
   list-style-type: decimal;
 }
 
 .orderedlist__item {
   margin-top: 5px;
 }
+
+
+/*========== БЛОК ФОТОГРАФИИ ПЛАНЕТЫ ==========*/
+.sidephoto {
+  float: right;
+
+  max-width: 320px;
+  width: 100%;
+
+  height: auto;
+}
+
+
 
 #structure {
   max-width: 310px;
@@ -33,5 +47,12 @@
   height: auto;
 }
 
-
 /*========== МЕДИА ЗАПРОСЫ ==========*/
+@media (max-width: 930px) {
+  .sidephoto {
+    display: block;
+
+    float: none;
+    margin: 0 auto 15px auto;
+  }
+}

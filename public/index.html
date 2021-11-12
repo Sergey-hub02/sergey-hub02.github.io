@@ -9,19 +9,81 @@
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
+  <link rel="stylesheet" href="./css/article.css">
+  <link rel="stylesheet" href="./css/blocks/section.css">
   <link rel="stylesheet" href="./css/blocks/map.css">
+  <link rel="stylesheet" href="./css/blocks/main.css">
 
   <link rel="icon" href="./imgs/icons/favicon.png">
 </head>
 
 <body>
 
+<!--========== ИНФОРМАЦИЯ О СОЛНЕЧНОЙ СИСТЕМЕ ==========-->
+<main class="main">
+  <div class="main__inner">
+
+    <!-- Общая информация про Солнечную систему -->
+    <section class="section">
+      <header class="section__header">
+        <h1 class="section__title">Солнечная система</h1>
+      </header>
+
+      <div class="section__content">
+        <p class="text"><img class="sidephoto" src="./imgs/map.png">Солнечная система — звёздная система в галактике Млечный Путь, включающая Солнце и естественные космические объекты, обращающиеся вокруг него: планеты, их спутники, карликовые планеты, астероиды, метеороиды, кометы и космическую пыль.</p>
+      </div>
+    </section>
+
+    <!-- Состав солнечной системы -->
+    <section class="section">
+      <header class="section__header">
+        <h2 class="section__title">Состав солнечной системы</h2>
+      </header>
+
+      <div class="section__content">
+        <p class="text">В состав солнечной системы входит восемь основных планет и пять карликовых, вращающихся приблизительно в одной плоскости. По своим физическим свойствам планеты делятся на земную группу и планеты-гиганты.</p>
+        <p class="text">Планеты земной группы относительно небольшие и плотные, состоят из металлов и минералов. К ним относятся:</p>
+
+        <ol class="orderedlist">
+          <li class="orderedlist__item">Меркурий;</li>
+          <li class="orderedlist__item">Венера;</li>
+          <li class="orderedlist__item">Земля;</li>
+          <li class="orderedlist__item">Марс.</li>
+        </ol>
+
+        <p class="text">Планеты-гиганты во много раз больше других планет, они состоят из газов и льда. Это:</p>
+
+        <ol class="orderedlist">
+          <li class="orderedlist__item">Юпитер;</li>
+          <li class="orderedlist__item">Сатурн;</li>
+          <li class="orderedlist__item">Уран;</li>
+          <li class="orderedlist__item">Нептун.</li>
+        </ol>
+
+        <p class="text">Орбита Земли делит солнечную систему на две условные области. Во внутренней находятся ближайшие к Солнцу планеты — Меркурий и Венера. Во внешней области — более удалённые от Солнца, чем Земля: Марс, Юпитер, Сатурн, Уран и Нептун. Пространство между орбитами Марса и Юпитера, а также за Нептуном (пояс Койпера) занимают малые небесные тела: малые планеты и астероиды. Также по пространству Солнечной системы курсируют кометы и потоки метеороидов.</p>
+      </div>
+    </section>
+
+    <!-- Расположение планет солнечной системы -->
+    <section class="section">
+      <header class="section__header">
+        <h2 class="section__title">Расположение планет</h2>
+      </header>
+
+      <div class="section__content">
+        <p class="text">Ниже представлено примерное расположение планет Солнечной системы. При этом размеры планет относительно друг друга не соответствуют реальным. Также не включены пояс астероидов и различные спутники планет. Чтобы перейти на страницу нужной вам планеты, просто нажмите на неё.</p>
+      </div>
+    </section>
+
+  </div> <!-- ./main__inner -->
+</main>
+
 <!--========== КАРТА СОЛНЕЧНОЙ СИСТЕМЫ ==========-->
-<main class="map">
+<div class="map">
   <div class="map__item" id="sun">
     <a class="map__link" href="#">
       <picture>
-        <source class="map__planet" srcset="./imgs/planets/Sun/sun_half_bottom.png" media="(max-width: 1100px)">
+        <source class="map__planet" srcset="./imgs/planets/Sun/sun.png" media="(max-width: 1100px)">
         <img class="map__planet" src="./imgs/planets/Sun/sun_half_scaled.png" alt="Sun">
       </picture>
     </a>
@@ -74,7 +136,7 @@
       <img class="map__planet" src="./imgs/planets/Neptune/neptune_scaled.png" alt="Neptune">
     </a>
   </div>
-</main>
+</div> <!-- ./map -->
 
 </body>
 

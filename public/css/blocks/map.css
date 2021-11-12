@@ -1,9 +1,17 @@
 /*========== КАРТА СОЛНЕЧНОЙ СИСТЕМЫ ==========*/
+.map__image {
+  float: right;
+  width: 550px;
+  height: auto;
+}
+
 .map {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
+
+  margin-top: 30px;
 }
 
 .map__item {
