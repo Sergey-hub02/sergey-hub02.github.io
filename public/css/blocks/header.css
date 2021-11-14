@@ -1,35 +1,14 @@
-/*========== СТРЕЛКИ ==========*/
-.arrow {
-  display: inline-block;
-  vertical-align: middle;
-
-  border: solid var(--fg);
-  border-width: 0 2px 2px 0;
-
-  padding: 3px;
-  margin-left: 5px;
-}
-
-.arrow.up {
-  transform: rotate(-135deg);
-}
-
-.arrow.down {
-  transform: rotate(45deg);
-}
-
 /*========== HEADER ==========*/
 .header {
-  position: relative;
-
   width: 100%;
+  padding: 10px 0;
 
-  background-color: var(--head);
+  background-color: var(--yellow);
   box-shadow: 0 0 10px 10px var(--shadow);
 }
 
 .header__inner,
-.header__logo {
+.logo__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,6 +23,8 @@
   font-size: 25px;
   font-weight: 700;
   font-family: "Chilanka";
+
+  padding-left: 5px;
 }
 
 
@@ -53,106 +34,10 @@
   font-size: 20px;
 }
 
-.nav__button {
-  padding: 20px 15px;
-  transition: background-color 0.2s linear;
+.nav__link {
+  margin-left: 8px;
 }
 
-.nav__button:hover,
-.nav__button.active {
-  background-color: #66662b;
-}
-
-.nav__planets {
-  display: none;
-
-  position: absolute;
-  top: 101%;
-  right: 1%;
-
-  width: 200px;
-  background-color: var(--head);
-}
-
-.nav__planet {
-  padding: 8px 12px;
-  border-top: 1px solid var(--fg);
-
-  opacity: 0.75;
-  transition: background-color 0.2s linear, opacity 0.2s linear;
-}
-
-.nav__planet:hover {
-  opacity: 1;
-}
-
-.nav__planet:first-child {
-  border-top: 0;
-}
-
-.nav__planet:hover {
-  background-color: #66662b;
-}
-
-
-/*========== MEDIA QUERIES ==========*/
-@media (max-width: 1000px) {
-  .nav__planets {
-    right: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .header {
-    padding: 9px 0;
-  }
-  .logo__text {
-    display: none;
-  }
-
-  .nav__button {
-    display: block;
-    position: relative;
-
-    width: 40px;
-    height: 3px;
-
-    padding: 0;
-
-    background-color: var(--fg);
-    font-size: 0;
-  }
-
-  .nav__button:hover,
-  .nav__button.active {
-    background-color: var(--fg);
-  }
-
-  .nav__button::before,
-  .nav__button::after {
-    content: "";
-    display: block;
-
-    position: absolute;
-    background-color: var(--fg);
-
-    width: 100%;
-    height: 3px;
-  }
-
-  .nav__button::before {
-    top: -8px;
-    left: 0;
-  }
-
-  .nav__button::after {
-    bottom: -8px;
-    right: 0;
-  }
-
-
-  .arrow.up,
-  .arrow.down {
-    border: 0;
-  }
+.nav__link:first-child {
+  margin-left: 0;
 }

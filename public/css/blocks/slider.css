@@ -1,0 +1,105 @@
+/*========== СЛАЙДЕР ==========*/
+.slider {
+  position: relative;
+
+  max-width: 100%;
+  padding: 20px 0 30px 0;
+
+  background-size: cover;
+  background-image: url("../../imgs/space.jpg");
+  background-color: var(--bg);
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+.slider__inner {
+  display: flex;
+}
+
+.slider__item {
+  display: flex;
+  align-items: center;
+
+  flex-basis: 100%;
+  flex-shrink: 0;
+}
+
+.item__left {
+  padding: 0 10px;
+}
+
+.item__right {
+  padding: 0 10px;
+  text-align: justify;
+}
+
+.item__text {
+  font-size: 20px;
+}
+
+.item__button {
+  margin-top: 30px;
+}
+
+.item__link {
+  padding: 15px 20px;
+  background-color: #55133b;
+
+  font-size: 18px;
+  text-transform: uppercase;
+  
+  transition: background-color 0.2s linear;
+}
+
+.item__link:hover {
+  background-color: #662b4f;
+}
+
+
+/*========== СТРЕЛКИ ДЛЯ СЛАЙДЕРА ==========*/
+.left,
+.right {
+  display: block;
+  font-size: 0;
+
+  position: absolute;
+  top: 50%;
+
+  width: 25px;
+  height: 25px;
+
+  border-color: var(--fg);
+  border-top: 2px solid;
+}
+
+.left {
+  left: 35px;
+  transform: rotate(-45deg) translateY(-50%);
+  border-left: 2px solid;
+}
+
+.right {
+  right: 35px;
+  transform: rotate(45deg) translateY(-50%);
+  border-right: 2px solid;
+}
+
+
+/*========== МЕДИА-ЗАПРОСЫ ==========*/
+@media (max-width: 1200px) {
+  .slider__item {
+    flex-wrap: wrap;
+  }
+  
+  .item__left,
+  .item__right {
+    flex-basis: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 640px) {
+  .item__image {
+    max-width: 100%;
+  }
+}
