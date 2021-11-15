@@ -43,79 +43,81 @@
 
 
 <!--========== СЛАЙДЕР ДЛЯ ПЛАНЕТ ==========-->
-<div class="slider">
+<div id="slider" class="slider">
   <div class="container">
-    <div class="slider__inner">
+    <div class="slider__wrapper">
+      <div id="slider-inner" class="slider__inner">
 
-      <div class="slider__item">
-        <div class="item__left">
-          <img class="item__image" src="./imgs/planets/Sun/sun.png">
-        </div>
-
-        <div class="item__right">
-          <div class="item__text">
-            <p class="text">Звезда класса «жёлтый карлик». 98% массы Солнца приходится на водород и гелий, но в нём также содержатся все известные химические элементы. Солнце ярче, чем 85% звёзд в галактике, а температура его поверхности превышает 5 700°C...</p>
+        <div class="slider__item">
+          <div class="item__left">
+            <img class="item__image" src="./imgs/planets/Sun/sun.png">
           </div>
 
-          <div class="item__button">
-            <a class="item__link" href="#">Читать далее</a>
+          <div class="item__right">
+            <div class="item__text">
+              <p class="text">Звезда класса «жёлтый карлик». 98% массы Солнца приходится на водород и гелий, но в нём также содержатся все известные химические элементы. Солнце ярче, чем 85% звёзд в галактике, а температура его поверхности превышает 5 700°C...</p>
+            </div>
+
+            <div class="item__button">
+              <a class="item__link" href="#">Читать далее</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="slider__item">
-        <div class="item__left">
-          <img class="item__image" src="./imgs/planets/Mercury/mercury_scaled.png">
-        </div>
-
-        <div class="item__right">
-          <div class="item__text">
-            <p class="text">Меркурий (0,4 а.е. от Солнца) является ближайшей планетой к Солнцу и наименьшей планетой системы (0,055 массы Земли). У планеты нет спутников. Характерными...</p>
+        <div class="slider__item">
+          <div class="item__left">
+            <img class="item__image" src="./imgs/planets/Mercury/mercury_scaled.png">
           </div>
 
-          <div class="item__button">
-            <a class="item__link" href="#">Читать далее</a>
+          <div class="item__right">
+            <div class="item__text">
+              <p class="text">Меркурий (0,4 а.е. от Солнца) является ближайшей планетой к Солнцу и наименьшей планетой системы (0,055 массы Земли). У планеты нет спутников. Характерными...</p>
+            </div>
+
+            <div class="item__button">
+              <a class="item__link" href="#">Читать далее</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="slider__item">
-        <div class="item__left">
-          <img class="item__image" src="./imgs/planets/Venus/venus_scaled.png">
-        </div>
-
-        <div class="item__right">
-          <div class="item__text">
-            <p class="text">Меркурий (0,4 а.е. от Солнца) является ближайшей планетой к Солнцу и наименьшей планетой системы (0,055 массы Земли). У планеты нет спутников. Характерными...</p>
+        <div class="slider__item">
+          <div class="item__left">
+            <img class="item__image" src="./imgs/planets/Venus/venus_scaled.png">
           </div>
 
-          <div class="item__button">
-            <a class="item__link" href="#">Читать далее</a>
+          <div class="item__right">
+            <div class="item__text">
+              <p class="text">Меркурий (0,4 а.е. от Солнца) является ближайшей планетой к Солнцу и наименьшей планетой системы (0,055 массы Земли). У планеты нет спутников. Характерными...</p>
+            </div>
+
+            <div class="item__button">
+              <a class="item__link" href="#">Читать далее</a>
+            </div>
           </div>
         </div>
-      </div>
 
-      <div class="slider__item">
-        <div class="item__left">
-          <img class="item__image" src="./imgs/planets/Earth/earth_scaled.png">
-        </div>
-
-        <div class="item__right">
-          <div class="item__text">
-            <p class="text">Меркурий (0,4 а.е. от Солнца) является ближайшей планетой к Солнцу и наименьшей планетой системы (0,055 массы Земли). У планеты нет спутников. Характерными...</p>
+        <div class="slider__item">
+          <div class="item__left">
+            <img class="item__image" src="./imgs/planets/Earth/earth_scaled.png">
           </div>
 
-          <div class="item__button">
-            <a class="item__link" href="#">Читать далее</a>
+          <div class="item__right">
+            <div class="item__text">
+              <p class="text">Меркурий (0,4 а.е. от Солнца) является ближайшей планетой к Солнцу и наименьшей планетой системы (0,055 массы Земли). У планеты нет спутников. Характерными...</p>
+            </div>
+
+            <div class="item__button">
+              <a class="item__link" href="#">Читать далее</a>
+            </div>
           </div>
         </div>
-      </div>
 
-    </div> <!-- ./slider__inner -->
+      </div> <!-- ./slider__inner -->
+    </div> <!-- ./slider__wrapper -->
   </div> <!-- ./container -->
 
-  <button type="button" class="left">left</button>
-  <button type="button" class="right">right</button>
+  <button type="button" id="button-prev" class="slider__arrow">left</button>
+  <button type="button" id="button-next" class="slider__arrow">right</button>
 </div> <!-- ./slider -->
 
 

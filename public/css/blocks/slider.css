@@ -1,9 +1,15 @@
 /*========== СЛАЙДЕР ==========*/
 .slider {
-  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 
+  position: relative;
+  padding-top: 110px;
+
+  width: 100vw;
   max-width: 100%;
-  padding: 20px 0 30px 0;
+  height: 100vh;
 
   background-size: cover;
   background-image: url("../../imgs/space.jpg");
@@ -12,29 +18,48 @@
   background-position: center;
 }
 
+.slider__wrapper {
+  overflow-x: hidden;
+  padding-bottom: 70px;
+}
+
 .slider__inner {
   display: flex;
+
+  position: relative;
+  left: 0;
+
+  transition: left 0.5s linear;
 }
 
 .slider__item {
   display: flex;
-  align-items: center;
 
-  flex-basis: 100%;
+  flex-wrap: wrap;
   flex-shrink: 0;
+
+  align-items: center;
+}
+
+.item__image {
+  max-width: 100%;
 }
 
 .item__left {
-  padding: 0 10px;
+  flex-basis: 30%;
+  padding-left: 30px;
+  text-align: center;
 }
 
 .item__right {
-  padding: 0 10px;
+  flex-basis: 70%;
+  padding: 0 30px;
   text-align: justify;
 }
 
-.item__text {
-  font-size: 20px;
+.item__text .text {
+  font-size: 25px;
+  text-shadow: 2px 3px 1px var(--shadow);
 }
 
 .item__button {
@@ -49,6 +74,7 @@
   text-transform: uppercase;
   
   transition: background-color 0.2s linear;
+  box-shadow: 0 0 13px 8px var(--shadow);
 }
 
 .item__link:hover {
@@ -57,8 +83,7 @@
 
 
 /*========== СТРЕЛКИ ДЛЯ СЛАЙДЕРА ==========*/
-.left,
-.right {
+.slider__arrow {
   display: block;
   font-size: 0;
 
@@ -72,14 +97,14 @@
   border-top: 2px solid;
 }
 
-.left {
-  left: 35px;
+#button-prev {
+  left: 22px;
   transform: rotate(-45deg) translateY(-50%);
   border-left: 2px solid;
 }
 
-.right {
-  right: 35px;
+#button-next {
+  right: 22px;
   transform: rotate(45deg) translateY(-50%);
   border-right: 2px solid;
 }
@@ -87,19 +112,53 @@
 
 /*========== МЕДИА-ЗАПРОСЫ ==========*/
 @media (max-width: 1200px) {
-  .slider__item {
-    flex-wrap: wrap;
-  }
-  
   .item__left,
   .item__right {
     flex-basis: 100%;
+  }
+
+  .item__left {
+    padding-left: 0;
+  }
+
+  .item__image {
+    max-width: 400px;
+    height: auto;
+  }
+
+  .item__button {
     text-align: center;
   }
 }
 
-@media (max-width: 640px) {
+@media (max-width: 800px) {
+  .item__right {
+    padding: 0 5px;
+  }
+
+  .item__text .text {
+    font-size: 20px;
+  }
+}
+
+@media (max-height: 825px) {
+  .slider {
+    height: auto;
+  }
+}
+
+@media (max-width: 500px) {
+  .item__text .text {
+    font-size: 18px;
+  }
+
   .item__image {
-    max-width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 400px) {
+  .item__image {
+    max-width: 230px;
   }
 }
