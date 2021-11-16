@@ -25,15 +25,10 @@
 
 /*========== БЛОК ФОТОГРАФИИ ПЛАНЕТЫ ==========*/
 .sidephoto {
-  float: right;
-
-  max-width: 320px;
-  width: 100%;
-
+  float: left;
+  max-width: 400px;
   height: auto;
 }
-
-
 
 #structure {
   max-width: 310px;

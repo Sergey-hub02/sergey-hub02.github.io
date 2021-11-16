@@ -32,10 +32,12 @@
         </a>
       </div>
 
-      <nav class="nav">
-        <a class="nav__link" href="#">Общие сведения</a>
-        <a class="nav__link" href="#">Состав</a>
+      <nav id="nav" class="nav">
+        <a class="nav__link" href="#common">Общие сведения</a>
+        <a class="nav__link" href="#planets">Состав</a>
       </nav>
+
+      <button type="button" id="burger-menu" class="burger__menu">Бургер меню</button>
 
     </div> <!-- ./header__inner -->
   </div> <!-- ./container -->
@@ -125,34 +127,20 @@
 <main class="main">
   <div class="main__inner">
 
-    <!-- Содержание статьи -->
-    <section class="section">
-      <header class="section__header">
-        <h1 class="section__title">Содержание</h1>
-      </header>
-
-      <div class="section__content">
-        <ol class="orderedlist">
-          <li class="orderedlist__item">Солнечная система</li>
-          <li class="orderedlist__item">Состав солнечной системы</li>
-          <li class="orderedlist__item">Планеты</li>
-        </ol>
-      </div>
-    </section>
-
     <!-- Общая информация про Солнечную систему -->
-    <section class="section">
+    <section id="common" class="section">
       <header class="section__header">
         <h1 class="section__title">Солнечная система</h1>
       </header>
 
       <div class="section__content">
-        <p class="text"><img class="sidephoto" src="./imgs/map.png">Солнечная система — звёздная система в галактике Млечный Путь, включающая Солнце и естественные космические объекты, обращающиеся вокруг него: планеты, их спутники, карликовые планеты, астероиды, метеороиды, кометы и космическую пыль.</p>
+        <div><img class="sidephoto" src="./imgs/solar-system.jpg"></div>
+        <p class="text">Солнечная система — звёздная система в галактике Млечный Путь, включающая Солнце и естественные космические объекты, обращающиеся вокруг него: планеты, их спутники, карликовые планеты, астероиды, метеороиды, кометы и космическую пыль.</p>
       </div>
     </section>
 
     <!-- Состав солнечной системы -->
-    <section class="section">
+    <section id="planets" class="section">
       <header class="section__header">
         <h2 class="section__title">Состав солнечной системы</h2>
       </header>
@@ -186,6 +174,7 @@
 
 
 <!--========== JAVASCRIPT ==========-->
+<script src="../src/burger.js"></script>
 <script src="../src/slider.js"></script>
 
 </body>

@@ -16,6 +16,8 @@
   background-color: var(--bg);
   background-repeat: no-repeat;
   background-position: center;
+
+  box-shadow: 0 2px 20px var(--shadow);
 }
 
 .slider__wrapper {

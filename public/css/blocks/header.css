@@ -1,6 +1,6 @@
-/*========== HEADER ==========*/
+/*========== ШАПКА САЙТА ==========*/
 .header {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   z-index: 100;
@@ -8,7 +8,7 @@
   width: 100%;
   padding: 10px 0;
 
-  background-color: var(--yellow);
+  background-color: var(--red);
   box-shadow: 0 0 10px 10px var(--shadow);
 }
 
@@ -33,16 +33,138 @@
 }
 
 
-/*========== NAVIGATION ==========*/
+/*========== БУРГЕР МЕНЮ ==========*/
+.burger__menu {
+  display: none;
+  font-size: 0;
+}
+
+
+/*========== НАВИГАЦИЯ ==========*/
 .nav {
   height: 100%;
   font-size: 20px;
 }
 
 .nav__link {
+  position: relative;
   margin-left: 8px;
 }
 
 .nav__link:first-child {
   margin-left: 0;
+}
+
+.nav__link::after {
+  display: block;
+  content: "";
+
+  position: absolute;
+  top: 102%;
+  left: 0;
+  z-index: 100;
+
+  width: 0;
+  height: 2px;
+
+  background-color: var(--fg);
+  transition: width 0.2s linear;
+}
+
+.nav__link:hover::after {
+  width: 100%;
+}
+
+
+/*========== МЕДИА-ЗАПРОСЫ ==========*/
+@media (max-width: 800px) {
+  /* Отображаем бургер меню */
+  .burger__menu {
+    display: block;
+    position: relative;
+
+    width: 40px;
+    height: 3px;
+
+    background-color: var(--fg);
+  }
+
+  .burger__menu::before,
+  .burger__menu::after {
+    display: block;
+    content: "";
+
+    position: absolute;
+
+    width: 100%;
+    height: 3px;
+
+    background-color: var(--fg);
+    transition: transform 0.2s linear;
+  }
+
+  .burger__menu::before {
+    top: -10px;
+    left: 0;
+  }
+
+  .burger__menu::after {
+    bottom: -10px;
+    right: 0;
+  }
+
+  /* Когда бургер меню находится в активном состоянии, то её форма меняется на крестик */
+  .burger__menu.active {
+    background-color: rgba(231, 235, 238, 0);
+  }
+
+  .burger__menu.active::before,
+  .burger__menu.active::after {
+    top: 0;
+    left: 0;
+  }
+
+  .burger__menu.active::before {
+    transform: rotate(45deg);
+  }
+
+  .burger__menu.active::after {
+    transform: rotate(-45deg);
+  }
+
+  /* Когда бургер меню не в активном состоянии, то меню навигации недоступно */
+  .nav {
+    display: none;
+  }
+
+  /* Когда бургер меню в активном состоянии, то меню навигации появляется под шапкой сайта */
+  .nav.active {
+    display: block;
+
+    position: absolute;
+    top: 101%;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+  }
+
+  .nav__link {
+    display: block;
+    margin-left: 0;
+
+    padding: 10px;
+    text-align: center;
+
+    border-bottom: 2px solid var(--fg);
+    background-color: rgba(85, 85, 19, 0.75);
+  }
+
+  .nav__link:last-child {
+    border-bottom: 0;
+  }
+
+  .nav__link::after {
+    display: none;
+  }
 }
