@@ -8,17 +8,31 @@
   margin-bottom: 0;
 }
 
+.link {
+  color: #c48c67;
+  text-decoration: underline;
+}
+
 .image__container {
   text-align: center;
 }
 
 .orderedlist {
   padding-left: 30px;
+  margin-bottom: 15px;
   list-style-type: decimal;
 }
 
 .orderedlist__item {
   margin-top: 5px;
+}
+
+
+/*========== БЛОК ФОТОГРАФИИ ПЛАНЕТЫ ==========*/
+.sidephoto {
+  float: left;
+  max-width: 400px;
+  height: auto;
 }
 
 #structure {
@@ -33,5 +47,12 @@
   height: auto;
 }
 
-
 /*========== МЕДИА ЗАПРОСЫ ==========*/
+@media (max-width: 930px) {
+  .sidephoto {
+    display: block;
+
+    float: none;
+    margin: 0 auto 15px auto;
+  }
+}

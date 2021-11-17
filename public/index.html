@@ -9,56 +9,298 @@
 
   <link rel="stylesheet" href="./css/reset.css">
   <link rel="stylesheet" href="./css/style.css">
-
+  <link rel="stylesheet" href="./css/article.css">
   <link rel="stylesheet" href="./css/blocks/header.css">
-  <link rel="stylesheet" href="./css/blocks/intro.css">
+  <link rel="stylesheet" href="./css/blocks/slider.css">
+  <link rel="stylesheet" href="./css/blocks/section.css">
+  <link rel="stylesheet" href="./css/blocks/main.css">
+  <link rel="stylesheet" href="./css/blocks/footer.css">
 
   <link rel="icon" href="./imgs/icons/favicon.png">
 </head>
 
-<body>
+<body style="background-image: none; padding-bottom: 0">
 
-<!-- ========== HEADER ========== -->
+<!--========== ШАПКА САЙТА ==========-->
 <header class="header">
   <div class="container">
     <div class="header__inner">
-      <a class="header__logo" href="./index.html">
-        <img class="logo" src="./imgs/icons/logo.png" alt="logo">
-        <span class="logo__text">Solar Wiki</span>
-      </a>
 
-      <nav class="nav" id="nav">
-        <a class="nav__link" href="#">Link #1</a>
-        <a class="nav__link" href="#">Link #2</a>
-        <a class="nav__link" href="#">Link #3</a>
+      <div class="header__logo">
+        <a class="logo__link" href="./index.html">
+          <img class="logo" src="./imgs/icons/logo.png" alt="Solar Wiki">
+          <span class="logo__text">Solar Wiki</span>
+        </a>
+      </div>
+
+      <nav id="nav" class="nav">
+        <a class="nav__link" href="#common">Общие сведения</a>
+        <a class="nav__link" href="#planets">Состав</a>
       </nav>
 
-      <div class="burger">
-        <button class="burger__menu" id="burger_menu">Burger Menu</button>
-      </div>
+      <button type="button" id="burger-menu" class="burger__menu">Бургер меню</button>
+
     </div> <!-- ./header__inner -->
   </div> <!-- ./container -->
 </header>
 
 
-<!-- ========== INTRO SECTION ========== -->
-<section class="intro">
+<!--========== СЛАЙДЕР ДЛЯ ПЛАНЕТ ==========-->
+<div id="slider" class="slider">
   <div class="container">
-    <div class="intro__inner">
-      <h1 class="intro__title">Добро пожаловать на Solar Wiki</h1>
-      <p class="intro__text">Нужно узнать информацию о конкретной планете Солнечной системы?</p>
-      <p class="intro__text">Тогда Solar Wiki - идеальный инструмент для вас!</p>
+    <div class="slider__wrapper">
+      <div id="slider-inner" class="slider__inner">
 
-      <div class="intro__button">
-        <a class="intro__link" href="./pages/solarsystem.html">Начать исследование</a>
-      </div>
-    </div>
+        <div class="slider__item">
+          <div class="item__left">
+            <img class="item__image" src="./imgs/planets/Sun/sun.png">
+          </div>
+
+          <div class="item__right">
+            <div class="item__text">
+              <h3 class="item__title">Солнце</h3>
+              <p class="text">Звезда класса «жёлтый карлик». 98% массы Солнца приходится на водород и гелий, но в нём также содержатся все известные химические элементы. Солнце ярче, чем 85% звёзд в галактике...</p>
+            </div>
+
+            <div class="item__button">
+              <a class="item__link" href="./pages/planets/sun.html">Читать далее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="item__left">
+            <img class="item__image" src="./imgs/planets/Mercury/mercury_scaled.png">
+          </div>
+
+          <div class="item__right">
+            <div class="item__text">
+              <h3 class="item__title">Меркурий</h3>
+              <p class="text">Меркурий (0,4 а.е. от Солнца) является ближайшей планетой к Солнцу и наименьшей планетой системы (0,055 массы Земли). У планеты нет спутников. Характерными...</p>
+            </div>
+
+            <div class="item__button">
+              <a class="item__link" href="./pages/planets/mercury.html">Читать далее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="item__left">
+            <img class="item__image" src="./imgs/planets/Venus/venus_scaled.png">
+          </div>
+
+          <div class="item__right">
+            <div class="item__text">
+              <h3 class="item__title">Венера</h3>
+              <p class="text">Beнepa &mdash; втopaя плaнeтa oт Coлнцa и caмaя гopячaя плaнeтa в Coлнeчнoй cиcтeмe. Для дpeвниx людeй Beнepa былa нeизмeннoй cпутницeй. Этo вeчepняя звeздa и яpчaйший coceд...</p>
+            </div>
+
+            <div class="item__button">
+              <a class="item__link" href="./pages/planets/venus.html">Читать далее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="item__left">
+            <img class="item__image" src="./imgs/planets/Earth/earth_scaled.png">
+          </div>
+
+          <div class="item__right">
+            <div class="item__text">
+              <h3 class="item__title">Земля</h3>
+              <p class="text">Земля &mdash; третья по удалённости от Солнца планета Солнечной системы. Самая плотная, пятая по диаметру и массе среди всех планет и крупнейшая среди планет земной группы, в которую...</p>
+            </div>
+
+            <div class="item__button">
+              <a class="item__link" href="./pages/planets/earth.html">Читать далее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="item__left">
+            <img class="item__image" src="./imgs/planets/Mars/mars_scaled.png">
+          </div>
+
+          <div class="item__right">
+            <div class="item__text">
+              <h3 class="item__title">Марс</h3>
+              <p class="text">Mapc &mdash; чeтвepтaя плaнeтa oт Coлнцa и caмaя пoxoжaя нa Зeмлю в Coлнeчнoй cиcтeмe. Mы знaeм нaшeгo coceдa тaкжe пo втopoму нaимeнoвaнию – "Kpacнaя плaнeтa"...</p>
+            </div>
+
+            <div class="item__button">
+              <a class="item__link" href="./pages/planets/mars.html">Читать далее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="item__left">
+            <img class="item__image" src="./imgs/planets/Jupiter/jupiter.png">
+          </div>
+
+          <div class="item__right">
+            <div class="item__text">
+              <h3 class="item__title">Юпитер</h3>
+              <p class="text">Юпитер &mdash; самая большая планета, обладающая самой большой массой, самым сильным гравитационным полем, и самым большим влиянием в Солнечной системе...</p>
+            </div>
+
+            <div class="item__button">
+              <a class="item__link" href="./pages/planets/jupiter.html">Читать далее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="item__left">
+            <img class="item__image" src="./imgs/planets/Saturn/saturn_scaled.png">
+          </div>
+
+          <div class="item__right">
+            <div class="item__text">
+              <h3 class="item__title">Сатурн</h3>
+              <p class="text">Этo нaибoлee oтдaлeннaя oт звeзды плaнeтa, кoтopую мoжнo oтыcкaть c Зeмли бeз иcпoльзoвaния тeлecкoпa или бинoкля. Taк чтo o ee cущecтвoвaнии знaют дaвнo...</p>
+            </div>
+
+            <div class="item__button">
+              <a class="item__link" href="./pages/planets/saturn.html">Читать далее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="item__left">
+            <img class="item__image" src="./imgs/planets/Uranus/uranus_scaled.png">
+          </div>
+
+          <div class="item__right">
+            <div class="item__text">
+              <h3 class="item__title">Уран</h3>
+              <p class="text">Уpaн &mdash; ceдьмaя плaнeтa oт Coлнцa и тpeтья пo paзмepу плaнeтa в Coлнeчнoй cиcтeмa пocлe Юпитepa и Caтуpнa. Oблaдaeт кoллeкциeй cпутникoв и кoльцeвoй cиcтeмoй...</p>
+            </div>
+
+            <div class="item__button">
+              <a class="item__link" href="./pages/planets/uranus.html">Читать далее</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__item">
+          <div class="item__left">
+            <img class="item__image" src="./imgs/planets/Neptune/neptune_scaled.png">
+          </div>
+
+          <div class="item__right">
+            <div class="item__text">
+              <h3 class="item__title">Нептун</h3>
+              <p class="text">Heптун &mdash; вocьмaя oт Coлнцa и caмaя удaлeннaя плaнeтa Coлнeчнoй cиcтeмы. Этo гaзoвый гигaнт и пpeдcтaвитeль кaтeгopии coлнeчныx плaнeт внeшнeй cиcтeмы...</p>
+            </div>
+
+            <div class="item__button">
+              <a class="item__link" href="./pages/planets/neptune.html">Читать далее</a>
+            </div>
+          </div>
+        </div>
+
+      </div> <!-- ./slider__inner -->
+    </div> <!-- ./slider__wrapper -->
   </div> <!-- ./container -->
-</section> <!-- ./intro -->
+
+  <button type="button" id="button-prev" class="slider__arrow">left</button>
+  <button type="button" id="button-next" class="slider__arrow">right</button>
+</div> <!-- ./slider -->
 
 
-<!-- ========== JavaScript Section ========== -->
+<!--========== ИНФОРМАЦИЯ О СОЛНЕЧНОЙ СИСТЕМЕ ==========-->
+<main class="main">
+  <div class="main__inner">
+
+    <!-- Общая информация про Солнечную систему -->
+    <section id="common" class="section">
+      <header class="section__header">
+        <h1 class="section__title" style="text-align: center">Солнечная система</h1>
+      </header>
+
+      <div class="section__content">
+        <div>
+          <img class="sidephoto" id="solar-system" src="./imgs/solar-system.jpg">
+        </div>
+        <p class="text">Солнечной системой называют систему небесных тел, в состав которой входит <a class="link" href="./pages/planets/sun.html">Солнце</a> и множество других астрономических объектов, вращающихся вокруг него. Это планеты, спутники планет, астероиды и другие тела. Солнечная система не уникальна, на сегодняшний день обнаружены тысячи других планетных систем. Располагается Солнечная система в галактике Млечный путь, в районе, известном как Рукав Ориона.</p>
+      </div>
+    </section>
+
+    <!-- Состав солнечной системы -->
+    <section id="planets" class="section">
+      <header class="section__header">
+        <h2 class="section__title">Состав солнечной системы</h2>
+      </header>
+
+      <div class="section__content">
+        <p class="text">Главным телом в Солнечной системы является, естественно, <a class="link" href="./pages/planets/sun.html">Солнце</a>. На него приходится 99,86% массы всей Солнечной системы. На сегодняшний день достоверно известно о 8 планетах, вращающихся вокруг светила. Из них ближайшие четыре относятся к планетам земного типа, а следующие четыре являются газовыми гигантами. Между этими двумя группами располагается пояс астероидов, который называют главным, а за орбитой Нептуна, последнего газового гиганта, находится ещё одно скопление астероидов, пояс Койпера.</p>
+        <p class="text">Планеты земной группы относительно небольшие и плотные, состоят из металлов и минералов. К ним относятся:</p>
+
+        <ol class="orderedlist">
+          <li class="orderedlist__item">
+            <a class="link" href="./pages/planets/">Меркурий;</a>
+          </li>
+
+          <li class="orderedlist__item">
+            <a class="link" href="./pages/planets/">Венера;</a>
+          </li>
+
+          <li class="orderedlist__item">
+            <a class="link" href="./pages/planets/">Земля;</a>
+          </li>
+
+          <li class="orderedlist__item">
+            <a class="link" href="./pages/planets/">Марс.</a>
+          </li>
+        </ol>
+
+        <p class="text">Планеты-гиганты во много раз больше других планет, они состоят из газов и льда. Это:</p>
+
+        <ol class="orderedlist">
+          <li class="orderedlist__item">
+            <a class="link" href="./pages/planets/">Юпитер;</a>
+          </li>
+
+          <li class="orderedlist__item">
+            <a class="link" href="./pages/planets/">Сатурн;</a>
+          </li>
+
+          <li class="orderedlist__item">
+            <a class="link" href="./pages/planets/">Уран;</a>
+          </li>
+
+          <li class="orderedlist__item">
+            <a class="link" href="./pages/planets/">Нептун.</a>
+          </li>
+        </ol>
+
+        <p class="text">Орбита Земли делит солнечную систему на две условные области. Во внутренней находятся ближайшие к Солнцу планеты &mdash; Меркурий и Венера. Во внешней области &mdash; более удалённые от Солнца, чем Земля: Марс, Юпитер, Сатурн, Уран и Нептун. Пространство между орбитами Марса и Юпитера, а также за Нептуном (пояс Койпера) занимают малые небесные тела: малые планеты и астероиды. Также по пространству Солнечной системы курсируют кометы и потоки метеороидов.</p>
+      </div>
+    </section>
+
+  </div> <!-- ./main__inner -->
+</main>
+
+
+<!--========== ПОДВАЛ САЙТА ==========-->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <img class="footer__logo" src="./imgs/icons/logo.png" alt="logo">
+      <span class="footer__text">Разработчик интернет-ресурса Пак Сергей &hearts;</span>
+    </div>
+  </div>
+</footer>
+
+
+<!--========== JAVASCRIPT ==========-->
 <script src="../src/burger.js"></script>
+<script src="../src/slider.js"></script>
 
 </body>
 

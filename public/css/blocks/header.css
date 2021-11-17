@@ -1,35 +1,19 @@
-/*========== СТРЕЛКИ ==========*/
-.arrow {
-  display: inline-block;
-  vertical-align: middle;
-
-  border: solid var(--fg);
-  border-width: 0 2px 2px 0;
-
-  padding: 3px;
-  margin-left: 5px;
-}
-
-.arrow.up {
-  transform: rotate(-135deg);
-}
-
-.arrow.down {
-  transform: rotate(45deg);
-}
-
-/*========== HEADER ==========*/
+/*========== ШАПКА САЙТА ==========*/
 .header {
-  position: relative;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
 
   width: 100%;
+  padding: 10px 0;
 
-  background-color: var(--head);
+  background-color: var(--red);
   box-shadow: 0 0 10px 10px var(--shadow);
 }
 
 .header__inner,
-.header__logo {
+.logo__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -44,115 +28,143 @@
   font-size: 25px;
   font-weight: 700;
   font-family: "Chilanka";
+
+  padding-left: 5px;
 }
 
 
-/*========== NAVIGATION ==========*/
+/*========== БУРГЕР МЕНЮ ==========*/
+.burger__menu {
+  display: none;
+  font-size: 0;
+}
+
+
+/*========== НАВИГАЦИЯ ==========*/
 .nav {
   height: 100%;
   font-size: 20px;
 }
 
-.nav__button {
-  padding: 20px 15px;
-  transition: background-color 0.2s linear;
+.nav__link {
+  position: relative;
+  margin-left: 8px;
 }
 
-.nav__button:hover,
-.nav__button.active {
-  background-color: #66662b;
+.nav__link:first-child {
+  margin-left: 0;
 }
 
-.nav__planets {
-  display: none;
+.nav__link::after {
+  display: block;
+  content: "";
 
   position: absolute;
-  top: 101%;
-  right: 1%;
+  top: 102%;
+  left: 0;
+  z-index: 100;
 
-  width: 200px;
-  background-color: var(--head);
+  width: 0;
+  height: 2px;
+
+  background-color: var(--fg);
+  transition: width 0.2s linear;
 }
 
-.nav__planet {
-  padding: 8px 12px;
-  border-top: 1px solid var(--fg);
-
-  opacity: 0.75;
-  transition: background-color 0.2s linear, opacity 0.2s linear;
-}
-
-.nav__planet:hover {
-  opacity: 1;
-}
-
-.nav__planet:first-child {
-  border-top: 0;
-}
-
-.nav__planet:hover {
-  background-color: #66662b;
+.nav__link:hover::after {
+  width: 100%;
 }
 
 
-/*========== MEDIA QUERIES ==========*/
-@media (max-width: 1000px) {
-  .nav__planets {
-    right: 0;
-  }
-}
-
-@media (max-width: 600px) {
-  .header {
-    padding: 9px 0;
-  }
-  .logo__text {
-    display: none;
-  }
-
-  .nav__button {
+/*========== МЕДИА-ЗАПРОСЫ ==========*/
+@media (max-width: 800px) {
+  /* Отображаем бургер меню */
+  .burger__menu {
     display: block;
     position: relative;
 
     width: 40px;
     height: 3px;
 
-    padding: 0;
-
-    background-color: var(--fg);
-    font-size: 0;
-  }
-
-  .nav__button:hover,
-  .nav__button.active {
     background-color: var(--fg);
   }
 
-  .nav__button::before,
-  .nav__button::after {
-    content: "";
+  .burger__menu::before,
+  .burger__menu::after {
     display: block;
+    content: "";
 
     position: absolute;
-    background-color: var(--fg);
 
     width: 100%;
     height: 3px;
+
+    background-color: var(--fg);
+    transition: transform 0.2s linear;
   }
 
-  .nav__button::before {
-    top: -8px;
+  .burger__menu::before {
+    top: -10px;
     left: 0;
   }
 
-  .nav__button::after {
-    bottom: -8px;
+  .burger__menu::after {
+    bottom: -10px;
     right: 0;
   }
 
+  /* Когда бургер меню находится в активном состоянии, то её форма меняется на крестик */
+  .burger__menu.active {
+    background-color: rgba(231, 235, 238, 0);
+  }
 
-  .arrow.up,
-  .arrow.down {
-    border: 0;
+  .burger__menu.active::before,
+  .burger__menu.active::after {
+    top: 0;
+    left: 0;
+  }
+
+  .burger__menu.active::before {
+    transform: rotate(45deg);
+  }
+
+  .burger__menu.active::after {
+    transform: rotate(-45deg);
+  }
+
+  /* Когда бургер меню не в активном состоянии, то меню навигации недоступно */
+  .nav {
+    display: none;
+  }
+
+  /* Когда бургер меню в активном состоянии, то меню навигации появляется под шапкой сайта */
+  .nav.active {
+    display: block;
+
+    position: absolute;
+    top: 101%;
+    left: 0;
+    z-index: 100;
+
+    width: 100%;
+  }
+
+  .nav__link {
+    display: block;
+    margin-left: 0;
+
+    padding: 10px;
+    text-align: center;
+
+    border-bottom: 1px solid var(--fg);
+    background-color: rgba(85, 45, 19, 0.75);
+  }
+
+  .nav__link:last-child {
+    border-bottom: 0;
+  }
+
+  .nav__link::after {
+    display: none;
   }
 }
