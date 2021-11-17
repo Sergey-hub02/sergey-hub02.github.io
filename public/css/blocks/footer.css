@@ -1,7 +1,9 @@
 /*========== ПОДВАЛ САЙТА ==========*/
 .footer {
-  padding: 10px 12px;
-  background-color: #55133b;
+  font-size: 18px;
+  padding: 10px 0;
+  background-color: var(--red);
+  box-shadow: 0 0 10px 10px var(--shadow);
 }
 
 .footer__inner {
@@ -17,4 +19,12 @@
 
 .footer__text {
   padding-left: 5px;
+}
+
+
+/*========== МЕДИА-ЗАПРОСЫ ==========*/
+@media (max-width: 500px) {
+  .footer {
+    font-size: 16px;
+  }
 }

@@ -54,6 +54,15 @@ h3 {
   padding: 0 12px;
 }
 
+#solar-system {
+  display: block;
+  float: none;
+
+  max-width: 850px;
+  width: 100%;
+  margin: 0 auto 10px auto;
+}
+
 
 /*========== МЕДИА ЗАПРОСЫ ==========*/
 @media (max-width: 1000px), (max-height: 640px) {
