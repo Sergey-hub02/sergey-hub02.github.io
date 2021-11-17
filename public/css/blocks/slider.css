@@ -55,8 +55,13 @@
 
 .item__right {
   flex-basis: 70%;
-  padding: 0 30px;
+  padding-left: 30px;
   text-align: justify;
+}
+
+.item__title {
+  font-size: 30px;
+  text-shadow: 2px 3px 1px var(--shadow);
 }
 
 .item__text .text {
@@ -128,16 +133,20 @@
     height: auto;
   }
 
+  .item__right {
+    padding-left: 0;
+  }
+
+  .item__title {
+    text-align: center;
+  }
+
   .item__button {
     text-align: center;
   }
 }
 
 @media (max-width: 800px) {
-  .item__right {
-    padding: 0 5px;
-  }
-
   .item__text .text {
     font-size: 20px;
   }

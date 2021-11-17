@@ -156,8 +156,8 @@
     padding: 10px;
     text-align: center;
 
-    border-bottom: 2px solid var(--fg);
-    background-color: rgba(85, 85, 19, 0.75);
+    border-bottom: 1px solid var(--fg);
+    background-color: rgba(85, 45, 19, 0.75);
   }
 
   .nav__link:last-child {
