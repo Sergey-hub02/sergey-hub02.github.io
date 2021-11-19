@@ -10,10 +10,10 @@
   background-color: var(--yellow);
 }
 
-.sidebar__planets {
+/*.sidebar__planets {
   display: flex;
   flex-direction: column;
-}
+}*/
 
 .sidebar__planet {
   transition: background-color 0.2s linear;
@@ -42,7 +42,7 @@
 /*========== MEDIA ЗАПРОСЫ ==========*/
 
 /* По ширине экрана */
-@media (max-width: 1000px), (max-height: 640px) {
+@media (max-width: 950px) {
   .sidebar {
     top: auto !important;
     bottom: 0 !important;
@@ -52,26 +52,49 @@
   }
 
   .sidebar__planets {
+    display: flex;
     flex-direction: row;
-    flex-wrap:  wrap;
   }
 
   .sidebar__planet {
-    width: 11.11111%;
+    width: 10%;
   }
 }
 
-@media (max-width: 550px) {
-  .planet__icon {
-    width: 40px;
-    height: 40px;
+@media (max-width: 700px) {
+  .sidebar {
+    overflow-x: scroll;
+  }
+
+  .sidebar__planet {
+    flex-basis: 16.66666%;
+    flex-shrink: 0;
   }
 }
+
+@media (max-width: 500px) {
+  .sidebar__planet {
+    flex-basis: 20%;
+  }
+}
+
+@media (max-width: 400px) {
+  .sidebar__planet {
+    flex-basis: 25%;
+  }
+}
+
 
 /* По высоте экрана */
-@media (max-height: 700px) {
+@media (max-height: 670px) and (min-width: 950px) {
   .sidebar {
-    top: 0;
-    transform: none;
+    height: 330px;
+    overflow-y: scroll;
+  }
+}
+
+@media (max-height: 450px) and (min-width: 950px) {
+  .sidebar {
+    height: 100vh;
   }
 }
