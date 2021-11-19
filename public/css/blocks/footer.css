@@ -1,7 +1,9 @@
 /*========== ПОДВАЛ САЙТА ==========*/
 .footer {
-  font-size: 18px;
   padding: 10px 0;
+  margin-top: 15px;
+
+  font-size: 18px;
   background-color: var(--red);
   box-shadow: 0 0 10px 10px var(--shadow);
 }

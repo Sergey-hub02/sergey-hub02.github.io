@@ -65,7 +65,7 @@ h3 {
 
 
 /*========== МЕДИА ЗАПРОСЫ ==========*/
-@media (max-width: 1000px), (max-height: 640px) {
+/*@media (max-width: 1000px), (max-height: 640px) {
   body {
     padding-bottom: 65px;
   }
@@ -75,4 +75,4 @@ h3 {
   body {
     padding-bottom: 50px;
   }
-}
+}*/
