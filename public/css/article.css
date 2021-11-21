@@ -38,8 +38,14 @@
   margin-left: 15px;
 }
 
+.flat-image {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+}
+
 #structure {
-  max-width: 310px;
+  max-width: 400px;
   width: 100%;
   height: auto;
 }

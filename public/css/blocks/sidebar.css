@@ -10,11 +10,6 @@
   background-color: var(--yellow);
 }
 
-/*.sidebar__planets {
-  display: flex;
-  flex-direction: column;
-}*/
-
 .sidebar__planet {
   transition: background-color 0.2s linear;
 }
@@ -58,6 +53,10 @@
 
   .sidebar__planet {
     width: 10%;
+  }
+
+  body {
+    padding-bottom: 65px;
   }
 }
 
