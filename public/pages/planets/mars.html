@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Марс</title>
+
+  <link rel="stylesheet" href="../../css/reset.css">
+  <link rel="stylesheet" href="../../css/style.css">
+  <link rel="stylesheet" href="../../css/article.css">
+
+  <link rel="stylesheet" href="../../css/blocks/header.css">
+  <link rel="stylesheet" href="../../css/blocks/sidebar.css">
+  <link rel="stylesheet" href="../../css/blocks/main.css">
+  <link rel="stylesheet" href="../../css/blocks/section.css">
+  <link rel="stylesheet" href="../../css/blocks/footer.css">
+
+  <link rel="icon" href="../../imgs/icons/favicon.png">
+</head>
+
+<body>
+
+<!--========== БОКОВАЯ ПАНЕЛЬ ==========-->
+<aside class="sidebar">
+  <ul class="sidebar__planets">
+    <li class="sidebar__planet" title="Главная">
+      <a class="planet__link" href="../../index.html">
+        <img class="planet__icon" src="../../imgs/icons/home.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Солнце">
+      <a class="planet__link" href="./sun.html">
+        <img class="planet__icon" src="../../imgs/icons/planets/sun.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Меркурий">
+      <a class="planet__link" href="./mercury.html">
+        <img class="planet__icon" src="../../imgs/icons/planets/mercury.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Венера">
+      <a class="planet__link" href="./venus.html">
+        <img class="planet__icon" src="../../imgs/icons/planets/venus.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Земля">
+      <a class="planet__link" href="./earth.html">
+        <img class="planet__icon" src="../../imgs/icons/planets/earth.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet active" title="Марс">
+      <a class="planet__link" href="./mars.html">
+        <img class="planet__icon" src="../../imgs/icons/planets/mars.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Юпитер">
+      <a class="planet__link" href="./jupiter.html">
+        <img class="planet__icon" src="../../imgs/icons/planets/jupiter.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Сатурн">
+      <a class="planet__link" href="./saturn.html">
+        <img class="planet__icon" src="../../imgs/icons/planets/saturn.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Уран">
+      <a class="planet__link" href="./uranus.html">
+        <img class="planet__icon" src="../../imgs/icons/planets/uranus.png">
+      </a>
+    </li>
+
+    <li class="sidebar__planet" title="Нептун">
+      <a class="planet__link" href="./neptune.html">
+        <img class="planet__icon" src="../../imgs/icons/planets/neptune.png">
+      </a>
+    </li>
+  </ul>
+</aside>
+
+
+<!--========== ОСНОВНОЙ КОНТЕНТ ==========-->
+<main class="main">
+  <div class="container">
+    <div class="main__inner">
+
+      <!-- Секция с общей информацией о планете -->
+      <section class="section">
+        <header class="section__header">
+          <h1 class="section__title">Марс</h1>
+        </header>
+
+        <div class="section__content">
+          <p class="text"><img class="sidephoto" src="../../imgs/planets/Mars/mars_scaled.png" alt="mars">Mapc &mdash; чeтвepтaя плaнeтa oт Coлнцa и caмaя пoxoжaя нa Зeмлю в Coлнeчнoй cиcтeмe. Mы знaeм нaшeгo coceдa тaкжe пo втopoму нaимeнoвaнию – «Kpacнaя плaнeтa». Cвoe имя пoлучил в чecть бoгa вoйны у pимлян. Дeлo в eгo кpacнoм цвeтe, coздaннoм oкcидoм жeлeзa. Kaждыe нecкoлькo лeт плaнeтa pacпoлaгaeтcя ближe вceгo к нaм и ee мoжнo oтыcкaть в нoчнoм нeбe.</p>
+        </div>
+      </section>
+
+      <!-- Секция с содержанием статьи -->
+      <section class="section">
+        <header class="section__header">
+          <h2 class="section__title">Содержание</h2>
+        </header>
+
+        <div class="section__content" id="contentsTable">
+        </div>
+      </section>
+
+      <!-- Секция с внутренним строением планеты и её поверхностью -->
+      <section class="section" id="structure-surface-section">
+        <header class="section__header">
+          <h2 class="section__title">Внутреннее строение и поверхность</h2>
+        </header>
+
+        <div class="section__content">
+          <p class="text">Ученые могут только предполагать, какова структура Марса, опираясь на данные с орбитальных аппаратов, исследования метеоритов и опыт изучения других планет. Есть основания считать, что Марс, как и Земля, имеет трехслойную структуру:</p>
+          
+          <ol class="orderedlist">
+            <li class="orderedlist__item">Ядро. Скорее всего, большую часть ядра составляет железо, сера и никель. Знания о плотности планеты и силе магнитного поля позволяют думать, что ядро Марса твердое и значительно меньше земного, примерно 2000 км;</li>
+            <li class="orderedlist__item">Мантия по составу похожа на Земную. Возможно, в ее состав входят такие радиоактивные элементы, как уран, торий и калий. Их распад нагревает мантию до 1500&deg;C;</li>
+            <li class="orderedlist__item">Кора Марса неоднородна по толщине: слой увеличивается от северного полушария к южному. В основном она состоит из вулканического базальта.</li>
+          </ol>
+
+          <div class="image__container">
+            <img
+              class="flat-image"
+              src="../../imgs/planets/Mars/structure.png"
+              alt="structure"
+            >
+          </div>
+
+          <p class="text">Бо́льшую часть Марса, а особенно его северное полушарие, покрывают пустынные низменные равнины. Одна из них считается самой большой по площади низменностью во всей Солнечной системе, а ее относительная гладкость, возможно, является следствием нахождения здесь воды в далеком прошлом.</p>
+          <p class="text">Целая сеть каньонов покрывает поверхность Марса. Они сосредоточены, главным образом на экваторе. Свое название – долина Маринера – эти каньоны получили в честь одноименной космической станции, которая зафиксировала их в 1971 году. Длина долины сопоставима с протяженностью Австралии и занимает примерно 4000км, а в глубину иногда уходит на 10км.</p>
+          <p class="text">На Марсе находится множество вулканов, в том числе самый большой вулкан Солнечной системы – Олимп. Его высота достигает 27 км, что в 3 раза превышает высоту Эвереста.</p>
+        </div>
+      </section>
+
+      <!-- Секция с гидросферой планеты -->
+      <section class="section" id="hydrosphere-section">
+        <header class="section__header">
+          <h2 class="section__title">Гидросфера</h2>
+        </header>
+
+        <div class="section__content">
+          <p class="text">До середины прошлого века учёные считали, что на Марсе можно найти воду в жидком состоянии, и это давало повод говорить, что жизнь на красной планете существует. Эта теория была основана на том факте, что на планете совершенно чётко просматривались светлые и тёмные участки, которые очень напоминали моря и материки, а тёмные длинные линии на карте планеты походили на долины рек. Но, после первого же полёта к Марсу, стало очевидно, что вода из-за слишком низкого атмосферного давления в жидком состоянии на семидесяти процентах планеты находиться не может.</p>
+          <p class="text">Также многие учёные убеждены, что тёмные полосы на горных возвышенностях являются следами наличия жидкой солёной воды в настоящее время: водные потоки проступают в конце лета и исчезают в начале зимы. О том, что это вода, свидетельствует тот факт, что полосы не идут поверх препятствия, а как бы обтекают их, иногда при этом расходятся, а затем вновь сливаются (они очень хорошо заметны на карте планеты). Некоторые особенности рельефа говорят о том, что русла рек во время постепенного поднятия поверхности смещались и продолжали течь в удобном для них направлении.</p>
+          <p class="text">Ещё одним интересным фактом, свидетельствующим о наличии воды в атмосфере, являются густые облака, появление которых связывают с тем, что неровный рельеф планеты направляет воздушные массы вверх, где они остывают, а находящийся в них водяной пар конденсируется в ледяные кристаллы.</p>
+        </div>
+      </section>
+
+      <!-- Секция с атмосферой планеты -->
+      <section class="section" id="atmosphere-section">
+        <header class="section__header">
+          <h2 class="section__title">Атмосфера</h2>
+        </header>
+
+        <div class="section__content">
+          <p class="text">Рассматривая нашего космического соседа, как потенциального обладателя условий жизни, учёные тщательно изучили его атмосферу. Выяснилось много интересного. Но, как это часто бывает в науке, от ряда оптимистических прогнозов пришлось отказаться. И вот почему.</p>
+          <p class="text">Атмосфера планеты чрезвычайно разрежена &mdash; 1 % от величины атмосферного давления Земли. На нашей планете, чтобы получить марсианские условия (в плане силового воздействия газо-воздушного столба), требуется подняться на 35 километров.</p>
+          <p class="text">Газовая оболочка Марса на 95 % состоит из углекислоты, но вследствие её тонкости, парникового эффекта на планете не наблюдается. Однако вода есть. Хотя не в жидком состоянии. Огромные полярные «шапки» H<sub>2</sub>O насыщают воздух водяным паром. Исследователи уверены, что обнаружат «моря» внутри планеты. Возможно даже на небольшой глубине.</p>
+          <p class="text">Интересно, что тонкий слой атмосферы Марса определяет вполне земные климатические условия. Там также дуют ветры, проносятся пыльные бури; бывают туманы и наступают жуткие морозы (иногда до полутора сотен градусов по Цельсию).</p>
+
+          <p class="text">Ещё недавно, основной гипотезой утечки атмосферы с поверхности Красной планеты был недоказанный факт столкновения с космическим телом. Время внесло свои коррективы. В 2013 году межпланетная станция MAVEN провела зондирование Марса. В результате исследований, многое выяснилось.</p>
+          <p class="text">Миллиарды лет назад планета была тёплой и влажной. Имелись водоёмы, которые вполне могли стать средой обитания живых существ. 4,2 миллиарда лет назад, по неизвестным причинам Марс потерял магнитное поле. Произошла утечка атмосферы в космическое пространство. Она продолжается и сегодня. Правда, гораздо с гораздо меньшей скоростью &mdash; 100 граммов в секунду.</p>
+          <p class="text">Во время солнечных бурь, под воздействием потоков солнечного ветра, процесс потери газового слоя значительно возрастает.</p>
+          <p class="text">Если не произойдёт никаких изменений, то через пару миллиардов лет атмосфера нашего соседа по космосу исчезнет.</p>
+        </div>
+      </section>
+
+      <!-- Секция с магнитным полем планеты -->
+      <section class="section" id="magnetic-field-section">
+        <header class="section__header">
+          <h2 class="section__title">Магнитное поле</h2>
+        </header>
+
+        <div class="section__content">
+          <p class="text">На планете Марс не существует планетарного магнитного поля. Планета имеет магнитные полюса, которые являются остатками древнего планетарного поля. Так как магнитное поле Марса фактически отсутствует, то он постоянно подвергается бомбардировке солнечным излучением, а также воздействием солнечного ветра, что делает его бесплодным миром, который мы и видим сегодня.</p>
+          <p class="text">Большинство планет, создают магнитное поле с помощью динамо-эффекта. Металлы в ядре планеты расплавлены и постоянно движутся. Движущиеся металлы создают электрический ток, который в конечном итоге проявляется в виде магнитного поля.</p>
+        </div>
+      </section>
+
+    </div>  <!-- ./main__inner -->
+  </div>  <!-- ./container -->
+</main>
+
+
+<!-- ПОДВАЛ -->
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <img class="footer__logo" src="../../imgs/icons/logo.png" alt="logo">
+      <span class="footer__text">Разработчик интернет-ресурса Пак Сергей &hearts;</span>
+    </div>
+  </div>
+</footer>
+
+
+<!--========== JAVASCRIPT ==========-->
+<script src="../../../src/contentsTable.js"></script>
+
+</body>
+
+</html>

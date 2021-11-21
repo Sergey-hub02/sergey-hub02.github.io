@@ -15,7 +15,6 @@
   <link rel="stylesheet" href="../../css/blocks/sidebar.css">
   <link rel="stylesheet" href="../../css/blocks/main.css">
   <link rel="stylesheet" href="../../css/blocks/section.css">
-  <link rel="stylesheet" href="../../css/blocks/planet__photo.css">
   <link rel="stylesheet" href="../../css/blocks/footer.css">
 
   <link rel="icon" href="../../imgs/icons/favicon.png">
@@ -27,61 +26,61 @@
 <aside class="sidebar">
   <ul class="sidebar__planets">
     <li class="sidebar__planet" title="Главная">
-      <a class="planet__link" href="#">
+      <a class="planet__link" href="../../index.html">
         <img class="planet__icon" src="../../imgs/icons/home.png">
       </a>
     </li>
 
     <li class="sidebar__planet" title="Солнце">
-      <a class="planet__link" href="#">
+      <a class="planet__link" href="./sun.html">
         <img class="planet__icon" src="../../imgs/icons/planets/sun.png">
       </a>
     </li>
 
     <li class="sidebar__planet" title="Меркурий">
-      <a class="planet__link" href="#">
+      <a class="planet__link" href="./mercury.html">
         <img class="planet__icon" src="../../imgs/icons/planets/mercury.png">
       </a>
     </li>
 
     <li class="sidebar__planet" title="Венера">
-      <a class="planet__link" href="#">
+      <a class="planet__link" href="./venus.html">
         <img class="planet__icon" src="../../imgs/icons/planets/venus.png">
       </a>
     </li>
 
     <li class="sidebar__planet active" title="Земля">
-      <a class="planet__link" href="#">
+      <a class="planet__link" href="./earth.html">
         <img class="planet__icon" src="../../imgs/icons/planets/earth.png">
       </a>
     </li>
 
     <li class="sidebar__planet" title="Марс">
-      <a class="planet__link" href="#">
+      <a class="planet__link" href="./mars.html">
         <img class="planet__icon" src="../../imgs/icons/planets/mars.png">
       </a>
     </li>
 
     <li class="sidebar__planet" title="Юпитер">
-      <a class="planet__link" href="#">
+      <a class="planet__link" href="./jupiter.html">
         <img class="planet__icon" src="../../imgs/icons/planets/jupiter.png">
       </a>
     </li>
 
     <li class="sidebar__planet" title="Сатурн">
-      <a class="planet__link" href="#">
+      <a class="planet__link" href="./saturn.html">
         <img class="planet__icon" src="../../imgs/icons/planets/saturn.png">
       </a>
     </li>
 
     <li class="sidebar__planet" title="Уран">
-      <a class="planet__link" href="#">
+      <a class="planet__link" href="./uranus.html">
         <img class="planet__icon" src="../../imgs/icons/planets/uranus.png">
       </a>
     </li>
 
     <li class="sidebar__planet" title="Нептун">
-      <a class="planet__link" href="#">
+      <a class="planet__link" href="./neptune.html">
         <img class="planet__icon" src="../../imgs/icons/planets/neptune.png">
       </a>
     </li>
@@ -111,19 +110,19 @@
           <h2 class="section__title">Содержание</h2>
         </header>
 
-        <div class="section__content">
-          <!-- TODO: Содержание должно генерироваться с помощью JavaScript -->
+        <div class="section__content" id="contentsTable">
         </div>
       </section>
 
       <!-- Секция с внутренним строением планеты -->
-      <section class="section">
+      <section class="section" id="structure-section">
         <header class="section__header">
           <h2 class="section__title">Внутреннее строение</h2>
         </header>
 
         <div class="section__content">
           <p class="text">Сердцевина Земли состоит из двух компонентов: внутреннего и внешнего ядер. Их радиус составляет 1300 км и 2200 км соответственно. В центре планеты температура способна достигать +5000 градусов Цельсия. Вокруг ядра находится слой мантии, который составляет примерно 84% от всего состава Земли. Он, в свою очередь, делится на верхнюю и нижнюю. Наружный слой мантии, называемый литосферой, начинается на глубине 2900 км от поверхности.</p>
+          <p class="text">Литосфера имеет толщину в 100 км. Ее верхняя часть зовется земной корой и служит оболочкой планеты. Толщина на суше равна примерно 50 км, а на дне океанов &mdash; 10 км. Литосфера представляет собой совокупность больших плит, которые имеют свойство двигаться.</p>
 
           <div class="image__container">
             <img
@@ -133,25 +132,23 @@
               alt="structure"
             >
           </div>
-
-          <p class="text">Литосфера имеет толщину в 100 км. Ее верхняя часть зовется земной корой и служит оболочкой планеты. Толщина на суше равна примерно 50 км, а на дне океанов – 10 км. Литосфера представляет собой совокупность больших плит, которые имеют свойство двигаться.</p>
         </div>
       </section>
 
       <!-- Секция с гидросферой планеты -->
-      <section class="section">
+      <section class="section" id="hydrosphere-section">
         <header class="section__header">
           <h2 class="section__title">Гидросфера</h2>
         </header>
 
         <div class="section__content">
-          <p class="text">Наличие жидкой воды на поверхности Земли является уникальным свойством, которое отличает нашу планету от других объектов Солнечной системы. Бо́льшая часть воды сосредоточена в океанах и морях, значительно меньше — в речных сетях, озёрах, болотах и подземных водах. Также большие запасы воды имеются в атмосфере, в виде облаков и водяного пара.</p>
+          <p class="text">Наличие жидкой воды на поверхности Земли является уникальным свойством, которое отличает нашу планету от других объектов Солнечной системы. Бо́льшая часть воды сосредоточена в океанах и морях, значительно меньше &mdash; в речных сетях, озёрах, болотах и подземных водах. Также большие запасы воды имеются в атмосфере, в виде облаков и водяного пара.</p>
           <p class="text">Часть воды находится в твёрдом состоянии в виде ледников, снежного покрова и в вечной мерзлоте, слагая криосферу.</p>
         </div>
       </section>
 
       <!-- Секция с атмосферой планеты -->
-      <section class="section">
+      <section class="section" id="atmosphere-section">
         <header class="section__header">
           <h2 class="section__title">Атмосфера</h2>
         </header>
@@ -161,8 +158,7 @@
 
           <div class="image__container">
             <img
-              class="image"
-              id="atmosphere"
+              class="flat-image"
               src="../../imgs/planets/Earth/atmosphere.png"
               alt="atmosphere"
             >
@@ -180,7 +176,7 @@
       </section>
 
       <!-- Секция с биосферой планеты -->
-      <section class="section">
+      <section class="section" id="biosphere-section">
         <header class="section__header">
           <h2 class="section__title">Биосфера</h2>
         </header>
@@ -191,13 +187,13 @@
       </section>
 
       <!-- Секция с магнитным полем планеты -->
-      <section class="section">
+      <section class="section" id="magnetic-field-section">
         <header class="section__header">
           <h2 class="section__title">Магнитное поле</h2>
         </header>
 
         <div class="section__content">
-          <p class="text">Магнитное поле Земли в первом приближении представляет собой диполь, полюсы которого расположены рядом с географическими полюсами планеты. Поле формирует магнитосферу, которая отклоняет частицы солнечного ветра. Они накапливаются в радиационных поясах — двух концентрических областях в форме тора вокруг Земли. Около магнитных полюсов эти частицы могут «высыпаться» в атмосферу и приводить к появлению полярных сияний.</p>
+          <p class="text">Магнитное поле Земли в первом приближении представляет собой диполь, полюсы которого расположены рядом с географическими полюсами планеты. Поле формирует магнитосферу, которая отклоняет частицы солнечного ветра. Они накапливаются в радиационных поясах &mdash; двух концентрических областях в форме тора вокруг Земли. Около магнитных полюсов эти частицы могут «высыпаться» в атмосферу и приводить к появлению полярных сияний.</p>
         </div>
       </section>
 
@@ -215,6 +211,10 @@
     </div>
   </div>
 </footer>
+
+
+<!--========== JAVASCRIPT ==========-->
+<script src="../../../src/contentsTable.js"></script>
 
 </body>
 
