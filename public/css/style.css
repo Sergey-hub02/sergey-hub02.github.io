@@ -62,17 +62,3 @@ h3 {
   width: 100%;
   margin: 0 auto 10px auto;
 }
-
-
-/*========== МЕДИА ЗАПРОСЫ ==========*/
-/*@media (max-width: 1000px), (max-height: 640px) {
-  body {
-    padding-bottom: 65px;
-  }
-}
-
-@media (max-width: 550px) {
-  body {
-    padding-bottom: 50px;
-  }
-}*/
